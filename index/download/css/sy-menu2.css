@@ -1,0 +1,185 @@
+
+.txtList5 {
+    display: block;
+    font-size: 0;
+    width: 100%;
+}
+.txtList5 li {
+    width: 100%;
+    padding: 10px 0px;
+    padding-right: 3%;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.txtList5-m1 {
+    overflow: hidden;
+    clear: both;
+    padding-bottom: 3px;
+}
+
+.txtList5-m1 .date,
+.txtList5-m1 .txt1 {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+}
+
+.txtList5-m1 .date {
+    font-size: 0;
+    text-align: center;
+    margin-right: 12px;
+    width: 76px;
+    height: 76px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+    background-size: 14px auto;
+    border: 1px solid #e3e3e3;
+    float: left;
+    padding: 0px;
+    text-align: center;
+}
+
+.txtList5-m1 .date:before {
+    content: "";
+    width: 0;
+    height: 100%;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: middle;
+}
+
+.txtList5-m1 .date .k1 {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: middle;
+}
+
+.txtList5-m1 .date p {
+    font-size: 20px;
+    line-height:10px;
+    font-family: "RobotoRegular";
+    color: #666;
+}
+
+.txtList5-m1 .date h3 {
+    font-size: 25px;
+	font-weight: bold;
+    font-family: "RobotoCondensedBold";
+    color: #333;
+    line-height: 0px;
+}
+
+.txtList5-m1:hover .date {
+    /* background: #003f88; */
+    background: #B01F24;
+
+}
+
+.txtList5-m1:hover .date p {
+    color: #fff;
+    border-bottom-color: #fff;
+
+}
+
+.txtList5-m1:hover .date h3 {
+    color: #fff;
+}
+
+.txtList5-m1:hover .txt1 h3 a {
+    /* color: #095ab9; */
+    color: #B01F24;
+}
+
+.txtList5-m1 .txt1 {
+    display: block;
+    overflow: hidden;
+    padding-top: 15px;
+    padding-bottom: 0px;
+}
+
+.txtList5-m1 .txt1 h3 a {
+    height: 46px;
+    font-size: 18px;
+	font-weight: bold;
+    color: #013f88;
+    font-family: "RobotoCondensedBold";
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.txtList5-m1 .txt1 .ct {
+    padding-top: 10px;
+}
+
+.txtList5-m1 .txt1 .ct p {
+    font-size: 14px;
+    color: #666666;
+    line-height: 24px;
+}
+
+.txtList5 li.last .txtList5-m1 .txt1 {
+    border-bottom: 0px;
+}
+
+
+/*----------------------------LIST2-------------------------------------*/
+
+.SLLvertical-menu {
+    width:100%;
+	list-style-type:none;
+}
+.SLLvertical-menu .title{
+	font-size: 18px;
+	font-weight:bold;
+	color:#B01F24;
+	text-align: left;
+	font-family: 微软雅黑;
+	line-height: 40px;
+	border-bottom: 1px solid #d9d9d9;
+}
+.SLLvertical-menu a{
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;  
+	font-size: 18px;
+    font-family: "RobotoCondensedBold";
+}
+.SLLvertical-menu br{
+	line-height:10px;
+}
+
+.SLLvertical-menu a:hover {
+    background-color: #ccc;
+	color: #013f88;
+}
+
+.SLLvertical-menu:hover .txt h3 a {
+    /* color: #095ab9; */
+    color: red;
+	background-color: #ccc;
+}

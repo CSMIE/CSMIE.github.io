@@ -1,0 +1,38 @@
+/* Header */
+#timer {
+    font-style:Arial;
+    font-size: large;
+    color:#ffffff;
+    font-weight:bold;
+    padding-right: 20px;
+    padding-top: 0px;
+}
+
+#Guide {
+    font-size: large;
+    font-style:微软雅黑;
+    color:#ffffff;
+    font-weight:bold;
+    padding-left: 10px;
+    padding-top: 0px;
+}
+
+#guide {
+    font-style:Arial;
+    font-size: large;
+    color:#ffffff;
+    font-weight:bold;
+}
+
+/* Outline */
+
+.profile {
+    width: 100%;
+    margin:0px auto;
+    border: 1px solid;
+    height:100%;
+}
+
+
+
+

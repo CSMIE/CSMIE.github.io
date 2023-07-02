@@ -1,0 +1,649 @@
+<html>
+<head>
+	<title>e-Course</title>
+	<link rel="icon" href="image/CSMIE.ico" type="image/x-icon"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<link rel="stylesheet" href="CSS/layout.css" type="text/css">
+	<link rel="stylesheet" href="CSS/element.css" type="text/css">
+	<link rel="stylesheet" href="CSS/style.css" type="text/css">
+    <link rel="stylesheet" href="layui-main/dist/css/layui.css" type="text/css">
+	<script src="JS/elem.js" charset="utf-8"></script>
+	<script src="JS/announce.js" charset="utf-8"></script>
+	<script src="JS/print.js" charset="utf-8"></script>
+	<script src="/cdn.staticfile.org/layui/2.8.0/layui.js"></script>
+	<script src="layui-main/dist/layui.js" charset="utf-8"></script>
+</head>
+
+<body>
+	<div class="layui-layout layui-layout-admin">
+		<!--subside-->
+		<div class="layui-side layui-bg-black">
+			<div class="layui-side-scro9.5">
+			  <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+			  	<ul class="layui-nav layui-nav-tree" lay-filter="test">
+					<li class="layui-nav-item">
+						<a href="https://computersciencekaoyan.github.io/Online%20Course/e-Course">
+							<img  border="0" src="image/MSE.png" class="sidemark">
+						</a>
+					</li>
+
+					<li class="layui-nav-item">
+						<a href=" https://oc.sjtu.edu.cn/ " target="_blank"> 
+							<img  border="0" src="image/SJTU.png" class="sidemark">
+						</a>
+					</li>
+
+					<li class="layui-nav-item">
+						<a href="https://gitee.com/Jinhang_Qiu/Course-Materials" target="_blank">
+							<img  border="0" src="image/更多_more-app.png" class="sidemark">
+						</a>
+					</li>
+
+					<li class="layui-nav-item">
+						<a href=" https://www.icourse163.org/ " target="_blank">
+							<img  border="0" src="image/书籍1_book-one (1).png" class="sidemark">
+						</a>
+					</li>	
+
+					<li class="layui-nav-item">
+						<a href="https://leetcode.cn/" target="_blank"> 
+							<img  border="0" src="image/代码_code.png" class="sidemark"> 
+						</a>
+					</li>
+
+					<li class="layui-nav-item">
+						<a href=" https://mail.sjtu.edu.cn/zimbra/mail#1 " target="_blank"> 
+							<img  border="0" src="image/收件箱_inbox-r.png" class="sidemark">
+						</a>
+					</li>
+			  	</ul>
+			</div>
+		</div>
+		<!--subside-->
+		<!----------->
+		<!--BODY----->
+		<div class="layui-body">
+			<!-- 内容主体区域 -->
+			<div class="main-content">
+				<div class="layui-row layui-col-space30">
+					<div class="layui-header header">
+						<!-- 头部区域（可配合layui 已有的水平导航） -->
+						<ul class="layui-nav layui-layout-left e-course-title-left">
+							<a href="#" id="Homepage-title">UG-(2022-2023-3)-CS3311-Computer Network</a>
+						</ul>
+					</div>
+					<div class="layui-col-md9" style="overflow: none;">
+					  	<div class="grid-demo grid-demo-bg1">
+							<!--content-->
+							<div class="layui-col-md3">
+									<div class="layui-panel" style="width: 160px; margin: 0px;">
+									  <ul class="layui-menu" id="demo-menu">
+										<div class="subside-menu-title">2022-2023,Summer</div>
+										<li><div class="layui-menu-body-title"><a href="#home">Home</a></div></li>
+										<li><div class="layui-menu-body-title"><a href="#Syllabus">Syllabus</a></div></li>
+										<li><div class="layui-menu-body-title"><a href="#Modules">Modules</a></div></li>
+										<li><div class="layui-menu-body-title"><a href="#Assignments">Assignments</a></div></li>
+										<li><div class="layui-menu-body-title"><a href="#Resources">Resources</a></div></li>
+									  </ul>
+									</div>
+								</div>
+								<div class="layui-col-md8">
+								<!---->
+								<!--HOME-->
+								<div class="layui-row course-main-title-overall">
+									<div class="layui-col-md9">
+									  <div class="grid-demo grid-demo-bg1"><div class="course-main-title" id="home">Computer Network</div></div>
+									</div>
+									<div class="layui-col-md3">
+									  <div class="grid-demo main-title-btn"><input value='Print' type='button' onclick='handlePrint()' class="btn-ver2"/></div>
+									</div>
+								</div>
+								<div class="layui-card">
+									<div class="layui-card-header card-header-CSMIE"><div class="card-title-CSMIE">Overview</div></div>
+									<div class="layui-card-body">
+                                        本课程通过对物理层、数据链路层、网络层、传输控制层和应用层的介绍，对局域网、
+                                        互联网的相关技术也进行了较为详细的讲授和分析，尤其是通过对TCP/IP协议的学习，
+                                        能使同学们了解基于互联网的一些基本原理和应用技术，初步了解和掌握基于TCP/IP的
+                                        应用编程。本课程教学特点是以介绍计算机网络的基本理论、基本技术以及网络协议分析
+                                        为主线，以一定量的计算机网络应用开发技术为基础，理论联系实际，为同学们今后从事
+                                        该领域的研究和应用开发工作奠定良好的基础。<br>
+									</div>
+								</div>
+								<div class="layui-card">
+									<div class="layui-card-header card-header-CSMIE"><div class="card-title-CSMIE">Course Information</div></div>
+									<div class="layui-card-body">
+										<table cellspacing="20px" cellpadding="2" class="info"><tbody>
+											<tr>
+												<td valign="top"><div align="right"><b>Textbook</b></div></td>
+												<td class="course-information">
+													计算机网络：自顶向下方法：原书第8版.--北京：机械工业出版社，2022.7<br>
+													2024年计算机网络考研复习指导/王道论坛组编. --北京：电子工业出版社，2022.12
+												</td>
+											</tr>
+											<tr>
+												<td valign="top"><div align="right"><b>Credit</b></div></td>
+												<td class="course-information">27 Units</td>
+											</tr>	
+											<tr>
+												<td valign="top"><div align="right"><b>Grading</b></div></td>
+												<td class="course-information">
+													Composed from total lab performance (30%),<br>
+													Total written assignment performance (30%),<br>
+													Final exam performance (40%)
+												</td>
+											</tr>	
+											<tr>
+												<td valign="top"><div align="right"><b>Fork</b></div></td>
+												<td class="course-information"><a href="https://cs144.github.io/" target="_blank">CS144: Introduction to Computer Networking</a></td>
+											</tr>	
+											<tr>
+												<td valign="top"><div align="right"><b>Exam</b></div></td>
+												<td class="course-information">There is a final exam, held during exam week, closed book.</td>
+											</tr>
+										</tbody></table>
+									</div>
+								</div>
+								<div class="layui-card">
+									<div class="layui-card-header card-header-CSMIE"><div class="card-title-CSMIE">Lecture Videos</div></div>
+									<div class="layui-card-body">
+										<!--Linklist-->
+										<ul class="link-list">
+											
+											<li class="link-list-item">
+												<div class="layui-row">
+													<div class="layui-col-xs1">
+													  	<div class="grid-demo grid-demo-bg1"><img src="image/main-content-element/link-three_black.png" class="link-list-img"></div>
+													</div>
+													<div class="layui-col-xs11">
+													  	<div class="grid-demo"><a href="https://www.bilibili.com/video/BV1JV411t7ow/" target="_blank">Lecture Videos</a></div>
+													</div>
+												</div>
+											</li>
+
+											<li class="link-list-item">
+												<div class="layui-row">
+													<div class="layui-col-xs1">
+													  	<div class="grid-demo grid-demo-bg1"><img src="image/main-content-element/link-three_black.png" class="link-list-img"></div>
+													</div>
+													<div class="layui-col-xs11">
+													  	<div class="grid-demo"><a href="https://www.bilibili.com/video/BV19E411D78Q" target="_blank">Recitation</a></div>
+													</div>
+												</div>
+											</li>
+
+											<li class="link-list-item">
+												<div class="layui-row">
+													<div class="layui-col-xs1">
+													  	<div class="grid-demo grid-demo-bg1"><img src="image/main-content-element/link-three_black.png" class="link-list-img"></div>
+													</div>
+													<div class="layui-col-xs11">
+													  	<div class="grid-demo"><a href="https://gaia.cs.umass.edu/kurose_ross/index.php" target="_blank">Resource</a></div>
+													</div>
+												</div>
+											</li>
+										</ul>
+										<!--Linklist-->
+									</div>
+								</div>
+								<!--HOME-->
+								<!--Syllabus-->
+								<div class="main-title" id="Syllabus">Course Syllabus</div>	
+								<table class="syllabus-layout">
+									<thead><tr class="syllabus-head">
+										<th class="sy-date">Date</th>
+										<th class="sy-details">Details</th>
+										<th class="sy-due">Reading</th>
+									</tr></thead>
+									<tbody>
+										<tr class="syllabus-body">
+											<td class="sy-date">Nil</td>
+											<td class="sy-details">1.1-1.2：概述与网络边缘</td>
+											<td class="sy-due">1.1-1.2</td>
+										</tr>
+										<tr class="syllabus-body">
+											<td class="sy-date">Nil</td>
+											<td class="sy-details">1.3：网络核心</td>
+											<td class="sy-due">1.3</td>
+										</tr>
+                                        <tr class="syllabus-body">
+											<td class="sy-date">Nil</td>
+											<td class="sy-details">1.4-1.6：分组延时、丢失和吞吐量</td>
+											<td class="sy-due">1.4</td>
+										</tr>
+										<tr class="syllabus-body">
+											<td class="sy-date">Nil</td>
+											<td class="sy-details">1.7：协议层次和服务模型</td>
+											<td class="sy-due">1.5</td>
+										</tr>
+                                        <tr class="syllabus-body">
+											<td class="sy-date">Nil</td>
+											<td class="sy-details">1.8-1.9：历史与小结</td>
+											<td class="sy-due">1.7-1.8</td>
+										</tr>
+										<tr class="syllabus-body">
+											<td class="sy-date">Nil</td>
+											<td class="sy-details">2.0-2.1：应用层概述与原理</td>
+											<td class="sy-due">2.1</td>
+										</tr>
+                                        <tr class="syllabus-body">
+											<td class="sy-date">Nil</td>
+											<td class="sy-details">2.2：Web and HTTP</td>
+											<td class="sy-due">2.2</td>
+										</tr>
+										<tr class="syllabus-body">
+											<td class="sy-date">Nil</td>
+											<td class="sy-details">2.3-2.4：FTP and EMail</td>
+											<td class="sy-due">2.3</td>
+										</tr>
+                                        <tr class="syllabus-body">
+											<td class="sy-date">Nil</td>
+											<td class="sy-details">2.5：DNS相关知识</td>
+											<td class="sy-due">2.4</td>
+										</tr>
+										<tr class="syllabus-body">
+											<td class="sy-date">Nil</td>
+											<td class="sy-details">2.6：P2P应用</td>
+											<td class="sy-due">2.5-2.6</td>
+										</tr>
+                                        <tr class="syllabus-body">
+											<td class="sy-date">Nil</td>
+											<td class="sy-details">2.7-2.10：套接字编程与小结</td>
+											<td class="sy-due">2.7-2.8</td>
+										</tr>
+										<tr class="syllabus-body">
+											<td class="sy-date">Nil</td>
+											<td class="sy-details">3.1-3.3：概述、传输层服务、多路复用、UDP</td>
+											<td class="sy-due">3.1-3.3</td>
+										</tr>
+                                        <tr class="syllabus-body">
+											<td class="sy-date">Nil</td>
+											<td class="sy-details">3.4：可靠数据传输的原理</td>
+											<td class="sy-due">3.4</td>
+										</tr>
+										<tr class="syllabus-body">
+											<td class="sy-date">Nil</td>
+											<td class="sy-details">3.5：面向连接的传输：TCP</td>
+											<td class="sy-due">3.5</td>
+										</tr>
+                                        <tr class="syllabus-body">
+											<td class="sy-date">Nil</td>
+											<td class="sy-details">3.6-3.7：拥塞控制原理与TCP拥塞</td>
+											<td class="sy-due">3.6-3.7</td>
+										</tr>
+										<tr class="syllabus-body">
+											<td class="sy-date">Nil</td>
+											<td class="sy-details">4.1-4.2：导论与路由器组成</td>
+											<td class="sy-due">4.1-4.2</td>
+										</tr>
+                                        <tr class="syllabus-body">
+											<td class="sy-date">Nil</td>
+											<td class="sy-details">4.3：IP Internet Protocol</td>
+											<td class="sy-due">4.3</td>
+										</tr>
+										<tr class="syllabus-body">
+											<td class="sy-date">Nil</td>
+											<td class="sy-details">4.4：通用转发和SDN</td>
+											<td class="sy-due">4.4</td>
+										</tr>
+                                        <tr class="syllabus-body">
+											<td class="sy-date">Nil</td>
+											<td class="sy-details">5.1-5.2：导论与路由器选择算法</td>
+											<td class="sy-due">5.1-5.2</td>
+										</tr>
+										<tr class="syllabus-body">
+											<td class="sy-date">Nil</td>
+											<td class="sy-details">5.3-5.6：自治系统内部的路由选择、BGP、SDN控制平面</td>
+											<td class="sy-due">5.3-5.5</td>
+										</tr>
+                                        <tr class="syllabus-body">
+											<td class="sy-date">Nil</td>
+											<td class="sy-details">6.1-6.2：引论和服务、差错检测和纠正</td>
+											<td class="sy-due">6.1-6.2</td>
+										</tr>
+										<tr class="syllabus-body">
+											<td class="sy-date">Nil</td>
+											<td class="sy-details">6.3：多点访协议</td>
+											<td class="sy-due">6.3</td>
+										</tr>
+                                        <tr class="syllabus-body">
+											<td class="sy-date">Nil</td>
+											<td class="sy-details">6.4-6.6 LANs，链路虚拟化，数据中心网络</td>
+											<td class="sy-due">6.4-6.6</td>
+										</tr>
+										<tr class="syllabus-body">
+											<td class="sy-date">Nil</td>
+											<td class="sy-details">8.1-8.3：网络安全、加密原理、认证</td>
+											<td class="sy-due">8.1-8.2</td>
+										</tr>
+                                        <tr class="syllabus-body">
+											<td class="sy-date">Nil</td>
+											<td class="sy-details">8.4-8.6：报文完整性、密钥分发和证书、层次安全性</td>
+											<td class="sy-due">8.3-8.8</td>
+										</tr>
+										<tr class="syllabus-body">
+											<td class="sy-date">Nil</td>
+											<td class="sy-details">8.7-8.9：防火墙、攻击和对策</td>
+											<td class="sy-due">8.9</td>
+										</tr>
+									</tbody>
+								</table>
+								<!--Syllabus-->
+								<!--Modules-->
+								<div class="main-title" id="Modules">Modules</div>
+								<div class="layui-collapse">
+									<div class="layui-colla-item">
+									  	<div class="layui-colla-title colla-title">Chapter 1</div>
+									  	<div class="layui-colla-content bg-gray">
+											<!--Filelist-->
+											<ul class="file-list">
+												<li class="file-list-item">
+													<div class="layui-row">
+														<div class="layui-col-xs1">
+															<div class="grid-demo grid-demo-bg1"><img src="image/main-content-element/file-homework.png" class="link-list-img"></div>
+														</div>
+														<div class="layui-col-xs11">
+															<div class="grid-demo"><a href="https://gitee.com/Jinhang_Qiu/Course-Materials/raw/master/CS3311%20Computer%20Network/Wireshark_Lab/Wireshark_Intro_v8.0.pdf" target="_blank">Wireshark_Intro</a></div>
+														</div>
+													</div>
+												</li>
+											</ul>
+											<!--Filelist-->
+										</div>
+									</div>
+									<div class="layui-colla-item">
+										<div class="layui-colla-title colla-title">Chapter 2</div>
+										<div class="layui-colla-content bg-gray">
+											<!--Linklist-ver2-->
+											<ul class="file-list">
+												<li class="file-list-item">
+													<div class="layui-row">
+														<div class="layui-col-xs1">
+															<div class="grid-demo grid-demo-bg1"><img src="image/main-content-element/file-homework.png" class="link-list-img"></div>
+														</div>
+														<div class="layui-col-xs11">
+															<div class="grid-demo"><a href="https://gitee.com/Jinhang_Qiu/Course-Materials/raw/master/CS3311%20Computer%20Network/Wireshark_Lab/Wireshark_HTTP_v8.0.pdf" target="_blank">Wireshark_HTTP</a></div>
+														</div>
+													</div>
+												</li>
+												<li class="file-list-item">
+													<div class="layui-row">
+														<div class="layui-col-xs1">
+															<div class="grid-demo grid-demo-bg1"><img src="image/main-content-element/file-homework.png" class="link-list-img"></div>
+														</div>
+														<div class="layui-col-xs11">
+															<div class="grid-demo"><a href="https://gitee.com/Jinhang_Qiu/Course-Materials/raw/master/CS3311%20Computer%20Network/Wireshark_Lab/Wireshark_DNS_v8.0.pdf" target="_blank">Wireshark_DNS</a></div>
+														</div>
+													</div>
+												</li>
+											</ul>
+											<!--Linklist-ver2-->
+										</div>
+									</div>
+									<div class="layui-colla-item">
+										<div class="layui-colla-title colla-title">Chapter 3</div>
+										<div class="layui-colla-content bg-gray">
+											<!--Linklist-ver2-->
+											<ul class="file-list">
+												<li class="file-list-item">
+													<div class="layui-row">
+														<div class="layui-col-xs1">
+															<div class="grid-demo grid-demo-bg1"><img src="image/main-content-element/file-homework.png" class="link-list-img"></div>
+														</div>
+														<div class="layui-col-xs11">
+															<div class="grid-demo"><a href="https://gitee.com/Jinhang_Qiu/Course-Materials/raw/master/CS3311%20Computer%20Network/Wireshark_Lab/Wireshark_TCP_v8.0.pdf" target="_blank">Wireshark_TCP</a></div>
+														</div>
+													</div>
+												</li>
+												<li class="file-list-item">
+													<div class="layui-row">
+														<div class="layui-col-xs1">
+															<div class="grid-demo grid-demo-bg1"><img src="image/main-content-element/file-homework.png" class="link-list-img"></div>
+														</div>
+														<div class="layui-col-xs11">
+															<div class="grid-demo"><a href="https://gitee.com/Jinhang_Qiu/Course-Materials/raw/master/CS3311%20Computer%20Network/Wireshark_Lab/Wireshark_UDP_v8.0.pdf" target="_blank">Wireshark_UDP</a></div>
+														</div>
+													</div>
+												</li>
+											</ul>
+											<!--Linklist-ver2-->
+										</div>
+									</div>
+                                    <div class="layui-colla-item">
+										<div class="layui-colla-title colla-title">Chapter 4</div>
+										<div class="layui-colla-content bg-gray">
+											<!--Linklist-ver2-->
+											<ul class="file-list">
+												<li class="file-list-item">
+													<div class="layui-row">
+														<div class="layui-col-xs1">
+															<div class="grid-demo grid-demo-bg1"><img src="image/main-content-element/file-homework.png" class="link-list-img"></div>
+														</div>
+														<div class="layui-col-xs11">
+															<div class="grid-demo"><a href="https://gitee.com/Jinhang_Qiu/Course-Materials/raw/master/CS3311%20Computer%20Network/Wireshark_Lab/Wireshark_IP_v8.0.pdf" target="_blank">Wireshark_IP</a></div>
+														</div>
+													</div>
+												</li>
+											</ul>
+											<!--Linklist-ver2-->
+										</div>
+									</div>
+                                    <div class="layui-colla-item">
+										<div class="layui-colla-title colla-title">Chapter 5</div>
+										<div class="layui-colla-content bg-gray">
+											<!--Linklist-ver2-->
+											<ul class="file-list">
+												<li class="file-list-item">
+													<div class="layui-row">
+														<div class="layui-col-xs1">
+															<div class="grid-demo grid-demo-bg1"><img src="image/main-content-element/file-homework.png" class="link-list-img"></div>
+														</div>
+														<div class="layui-col-xs11">
+															<div class="grid-demo"><a href="https://gitee.com/Jinhang_Qiu/Course-Materials/raw/master/CS3311%20Computer%20Network/Wireshark_Lab/Wireshark_ICMP_v8.0.pdf" target="_blank">Wireshark_ICMP</a></div>
+														</div>
+													</div>
+												</li>
+											</ul>
+											<!--Linklist-ver2-->
+										</div>
+									</div>
+                                    <div class="layui-colla-item">
+										<div class="layui-colla-title colla-title">Chapter 6</div>
+										<div class="layui-colla-content bg-gray">
+											<!--Linklist-ver2-->
+											<ul class="file-list">
+												<li class="file-list-item">
+													<div class="layui-row">
+														<div class="layui-col-xs1">
+															<div class="grid-demo grid-demo-bg1"><img src="image/main-content-element/file-homework.png" class="link-list-img"></div>
+														</div>
+														<div class="layui-col-xs11">
+															<div class="grid-demo"><a href="https://gitee.com/Jinhang_Qiu/Course-Materials/raw/master/CS3311%20Computer%20Network/Wireshark_Lab/Wireshark_NAT_v8.0.pdf" target="_blank">Wireshark_NAT</a></div>
+														</div>
+													</div>
+												</li>
+											</ul>
+											<!--Linklist-ver2-->
+										</div>
+									</div>
+                                    <div class="layui-colla-item">
+										<div class="layui-colla-title colla-title">Chapter 8</div>
+										<div class="layui-colla-content bg-gray">
+											<!--Linklist-ver2-->
+											<ul class="file-list">
+												<li class="file-list-item">
+													<div class="layui-row">
+														<div class="layui-col-xs1">
+															<div class="grid-demo grid-demo-bg1"><img src="image/main-content-element/file-homework.png" class="link-list-img"></div>
+														</div>
+														<div class="layui-col-xs11">
+															<div class="grid-demo"><a href="https://gitee.com/Jinhang_Qiu/Course-Materials/raw/master/CS3311%20Computer%20Network/Wireshark_Lab/Wireshark_TLS_v8.1.pdf" target="_blank">Wireshark_TLS</a></div>
+														</div>
+													</div>
+												</li>
+											</ul>
+											<!--Linklist-ver2-->
+										</div>
+									</div>
+                                    <div class="layui-colla-item">
+										<div class="layui-colla-title colla-title">Final Lab</div>
+										<div class="layui-colla-content bg-gray">
+											<!--Linklist-ver2-->
+											<ul class="file-list">
+												<li class="file-list-item">
+													<div class="layui-row">
+														<div class="layui-col-xs1">
+															<div class="grid-demo grid-demo-bg1"><img src="image/main-content-element/link.png" class="link-list-img"></div>
+														</div>
+														<div class="layui-col-xs11">
+															<div class="grid-demo"><a href="https://gitee.com/Jinhang_Qiu/Course-Materials/raw/master/CS3311%20Computer%20Network/Lab/check0.pdf" target="_blank">Lab0.pdf</a></div>
+														</div>
+													</div>
+												</li>
+												<li class="file-list-item">
+													<div class="layui-row">
+														<div class="layui-col-xs1">
+															<div class="grid-demo grid-demo-bg1"><img src="image/main-content-element/link.png" class="link-list-img"></div>
+														</div>
+														<div class="layui-col-xs11">
+															<div class="grid-demo"><a href="https://gitee.com/Jinhang_Qiu/Course-Materials/raw/master/CS3311%20Computer%20Network/Lab/check1.pdf" target="_blank">Lab1.pdf</a></div>
+														</div>
+													</div>
+												</li>
+												<li class="file-list-item">
+													<div class="layui-row">
+														<div class="layui-col-xs1">
+															<div class="grid-demo grid-demo-bg1"><img src="image/main-content-element/link.png" class="link-list-img"></div>
+														</div>
+														<div class="layui-col-xs11">
+															<div class="grid-demo"><a href="https://gitee.com/Jinhang_Qiu/Course-Materials/raw/master/CS3311%20Computer%20Network/Lab/check2.pdf" target="_blank">Lab2.pdf</a></div>
+														</div>
+													</div>
+												</li>
+												<li class="file-list-item">
+													<div class="layui-row">
+														<div class="layui-col-xs1">
+															<div class="grid-demo grid-demo-bg1"><img src="image/main-content-element/link.png" class="link-list-img"></div>
+														</div>
+														<div class="layui-col-xs11">
+															<div class="grid-demo"><a href="https://gitee.com/Jinhang_Qiu/Course-Materials/raw/master/CS3311%20Computer%20Network/Lab/check3.pdf" target="_blank">Lab3.pdf</a></div>
+														</div>
+													</div>
+												</li>
+												<li class="file-list-item">
+													<div class="layui-row">
+														<div class="layui-col-xs1">
+															<div class="grid-demo grid-demo-bg1"><img src="image/main-content-element/link.png" class="link-list-img"></div>
+														</div>
+														<div class="layui-col-xs11">
+															<div class="grid-demo"><a href="https://gitee.com/Jinhang_Qiu/Course-Materials/raw/master/CS3311%20Computer%20Network/Lab/check4.pdf" target="_blank">Lab4.pdf</a></div>
+														</div>
+													</div>
+												</li>
+												<li class="file-list-item">
+													<div class="layui-row">
+														<div class="layui-col-xs1">
+															<div class="grid-demo grid-demo-bg1"><img src="image/main-content-element/link.png" class="link-list-img"></div>
+														</div>
+														<div class="layui-col-xs11">
+															<div class="grid-demo"><a href="https://gitee.com/Jinhang_Qiu/Course-Materials/raw/master/CS3311%20Computer%20Network/Lab/check5.pdf">Lab5.pdf</a></div>
+														</div>
+													</div>
+												</li>
+												<li class="file-list-item">
+													<div class="layui-row">
+														<div class="layui-col-xs1">
+															<div class="grid-demo grid-demo-bg1"><img src="image/main-content-element/link.png" class="link-list-img"></div>
+														</div>
+														<div class="layui-col-xs11">
+															<div class="grid-demo"><a href="https://gitee.com/Jinhang_Qiu/Course-Materials/raw/master/CS3311%20Computer%20Network/Lab/check6.pdf">Lab6.pdf</a></div>
+														</div>
+													</div>
+												</li>
+												<li class="file-list-item">
+													<div class="layui-row">
+														<div class="layui-col-xs1">
+															<div class="grid-demo grid-demo-bg1"><img src="image/main-content-element/link.png" class="link-list-img"></div>
+														</div>
+														<div class="layui-col-xs11">
+															<div class="grid-demo"><a href="https://gitee.com/Jinhang_Qiu/Course-Materials/raw/master/CS3311%20Computer%20Network/Lab/check7.pdf">Lab7.pdf</a></div>
+														</div>
+													</div>
+												</li>
+											</ul>
+											<!--Linklist-ver2-->
+										</div>
+									</div>
+								</div>
+								<!--Modules-->
+								
+								<!--Resources-->
+								<div class="main-title" id="Resources">Reference</div>	
+								
+								<div class="layui-card  outer-reference-ver2">
+									<div class="layui-card-header outer-reference-ver2-header"><div class="outer-reference-ver2-title">CS144: Introduction to Computer Networking, Spring 2023</div></div>
+									<div class="layui-card-body">
+									  	<iframe src="https://cs144.github.io/" class="refer-out-web" ></iframe>
+									</div>
+								</div>
+								
+								<!--Resources-->
+								</div>
+			  				<!--content-->
+					  	</div>
+					</div>
+					<div class="layui-col-md3">
+					  	<div class="grid-demo">
+							<div class="sideboard">
+								<!--button-ver2-->
+							<ul class="link-list">
+								<li class="btn">
+									<div class="layui-row">
+										<div class="layui-col-xs3">
+											<div class="grid-demo grid-demo-bg1"><img src="image/main-content-element/trend.png" class="btn-img"></div>
+										</div>
+										<div class="layui-col-xs9">
+											<div class="grid-demo"><a href="https://computersciencekaoyan.github.io/Online%20Course/Grades.html">View Course Grades</a></div>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<!--button-ver2-->
+								<div class="sidetitle">calendar</div><hr>
+								<div class="ws-demo-static">
+									<div class="layui-inline" id="ID-laydate-static-2"></div>
+									<script src="JS/elem.js" charset="utf-8"></script>
+								</div>
+							</div>
+						</div>
+					<div>
+				</div>
+			</div>
+		</div>
+		<!--BODY----->
+		<!----------->
+		<div class="layui-footer">
+			<div class="layui-row layui-col-space15">
+				<div class="layui-col-md3">
+					<div class="grid-demo">
+						<div class="layui-btn-container">
+							<button type="button" class="layui-announce layui-btn-primary" lay-on="test-skin-custom">Announcement</button>
+							<script src="JS/announce.js" charset="utf-8"></script>
+						</div>
+					</div>
+				</div>
+				<div class="layui-col-md6">
+				  	<div class="grid-demo grid-demo-bg1">
+						<div class="cpy_details">Copyright &copy; 2023 Computer Science and Medical Interdisciplinary Engineering</div>
+				  	</div>
+				</div>
+				<div class="layui-col-md3">
+					<div class="grid-demo grid-demo-bg1 top">
+						<a href="#top" class="top">Top</a>
+					</div>
+			  </div>
+			  </div>
+		</div>
+	</div>
+</body>
+</html>

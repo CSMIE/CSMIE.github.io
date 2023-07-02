@@ -1,0 +1,217 @@
+
+/**
+ * @file config.css
+ * @author computersicencekaoyan
+ * @brief 
+ * @version 2.0
+ * @date 2023-06-03
+ * 
+ * @copyright Copyright (c) 2023
+ * 
+ */
+
+ * {
+    margin:0;
+	padding:0;
+    font-family: "LatoWeb","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.content{
+    width:100%;
+	line-height: normal;
+	position: relative;
+}
+
+hr {
+    border: 1;
+}
+
+/*--------------vertical menu---------------*/
+
+.subside_menu{
+    background-color:#2d3b45;
+    float: left;
+    width: 48px;
+    padding: 0;
+    height: 100%;
+    overflow: none ;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+}
+
+img.sidemark{
+    padding-top: 7px;
+    padding-bottom: 7px;
+    width: 38;
+    height: 38;
+    display: block;
+    margin: auto;
+}
+
+.sidemark a{
+    text-align: center;
+}
+
+/*-------------container------------*/
+
+.main-content{
+    padding: 20px;
+    padding-bottom: 60px;
+}
+
+#title{
+    font-size: 28px;
+    padding-bottom: 5px; 
+    border-bottom: black 1px;
+    color: #2d3b45;
+}
+
+/*-----------------sideboard--------------*/
+.sidetitle{
+    text-align: left;
+    font-size: 16px;
+    color: #2d3b45;
+    font-style:italic;
+    font-family:  "LatoWeb, Lato,Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-top: 23px;
+} 
+/*--------------listview------------------*/
+
+div.listview{
+    float: left;
+    width:100%;
+    padding-right: 20px;
+    margin-top: 2%;
+    overflow:none;
+}
+
+/*-------Grades---------*/
+
+.grades{
+    font-size: 24px;
+    padding-top: 20px;
+}
+
+.sy-grades{
+    border-bottom: 1px gray solid;
+    margin-top: 20px;
+    width: 500px;
+}
+
+.grades-layout{
+    border-bottom: 1px gray solid;
+    line-height: 40px;
+}
+
+td.grades-course{
+    width: 70%;
+}
+
+td.grades-course a{
+    color: #008ee2;
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 10px;
+    text-align: left;
+}
+
+td.grades-course a:hover{
+    color: #008ee2;
+    text-decoration: 1px solid;
+    font-size: 20px;
+}
+
+td.grades-counts{
+    width: 20%;
+    color: #2d3b45;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*--------------footer--------------------*/
+
+div.footer{
+    width: 100%;
+    float: left;
+    display:block;
+    position: absolute;
+    bottom:0;
+}
+
+.subline{
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.announce{
+    width: 30%;
+    padding-left:10px; 
+    padding-top: 10px; 
+    padding-bottom: 10px;
+    padding-right: 50px;
+}
+
+.announce a{
+    color: #008ee2;
+    text-decoration:none;
+}
+
+.announce a:hover{
+    color: red;
+    text-decoration:none;
+}
+
+.copyright{
+    text-align:right; 
+    width: 70%; 
+    padding: 0;
+    font-size: small;
+}
+
+.announce{
+    color: #008ee2;
+}
+
+.cpy_details{
+    color: black;
+    text-align: right;
+}
+
+/*-----adaption-------*/
+
+@media screen and (max-width:500px) {
+    .sidetitle{
+        margin-top: 20px;
+    }
+
+    .grades{
+        font-size: 24px;
+        padding-top: 20px;
+    }
+
+    .sy-grades{
+        width: 280px;
+    }
+    
+    td.grades-course{
+        width: 75%;
+    }
+    
+    td.grades-course a{
+        font-size: 16px;
+    }
+
+    td.grades-counts{
+        width: 25%;
+        color: #2d3b45;
+        font-size: 16px;
+    }
+}

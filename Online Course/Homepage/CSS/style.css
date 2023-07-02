@@ -1,0 +1,656 @@
+/**
+ * @file config.css
+ * @author computersicencekaoyan
+ * @brief 
+ * @version 3.0
+ * @date 2023-06-14
+ * 
+ * @copyright Copyright (c) 2023
+ * 
+ */
+
+
+/*-------calendar-------*/
+table.calendar {
+    font-family: arial, helvetica;
+    font-size: 10pt;
+    empty-cells: show;
+    border: 1px solid #000000;
+    border-collapse: collapse;
+}
+
+table.calendar tr td {
+    border: 1px solid #aaaaaa;
+}
+
+table.calendar tr {
+    vertical-align: top;
+    height: 6em;
+    background: #eeeeee;
+}
+
+table.calendar thead tr {
+    text-align: center;
+    background: #02a6ff02;
+    color: #ffffff;
+    height: auto;
+    font-weight: bold;
+}
+
+.lecture { background: #ffffaa; }
+.lecture2 { background: #ddddbb; }
+.lab { background: #ffddcc; }
+.tutorial { background: #dddd55; }
+.quiz { background: #ff9900; }
+.exercise { background: #ccecff; }
+.holiday { background: #ccffcc; }
+.special { background: #aaaaff; }
+.important { background: #ffaaaa; }
+.reading { color: #3333ff; }
+.deadline { color: #ff0000; }
+.assignment { color: #0aa00a; }
+.date { color: #444444; }
+
+
+/*------------Card-----------*/
+
+.cardBox {
+    width: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    float: left;
+    padding: 5px;
+    padding-top: 15px;
+    margin:5px 10px 25px 0px;
+}
+
+.headerBox {
+    color: #fff;
+    padding: 10px;
+    font-size: 15px;
+    height: 100px;
+}
+
+.headerBox a{
+    text-align: right;
+}
+
+.headerBox img{
+    border: 0;
+    width: 30;
+    height: 30;
+}
+
+.bodyBox {
+    padding: 10px;
+    font-size: small;
+    text-align: left;
+}
+
+.bodyBox a{
+    text-decoration:none;
+    color: black;
+}
+
+.bodyBox a:hover{
+    text-decoration:none;
+    color: black;
+}
+
+.bodyBox p {
+    margin-left: 5px;
+}
+/*--------button--------*/
+
+.btn{
+    background: #FAFAFA;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border: 1px solid #C7CDD1;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.btn:hover{
+    background: #eee;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border: 1px solid #C7CDD1;
+    margin-bottom: 10px;
+}
+
+.btn a{
+    color: black;
+    display: block;
+    padding: 7px 7px 7px 3px;
+    padding-left:0px;
+    text-decoration: none;  
+	font-size: 14px;
+    font-family: "RobotoCondensedBold";
+}
+
+.btn a:hover{
+    color: black;
+    display: block;
+    padding: 7px 7px 7px 3px;
+    padding-left:0px;
+    text-decoration: none;  
+	font-size: 14px;
+    font-family: "RobotoCondensedBold";
+}
+
+.btn-img{
+    width: 20px;
+    padding: 7px 3px 7px 9px;
+}
+
+/*--------button-ver2----*/
+.btn-ver2{
+    display: inline-block;
+    background-color: white;
+    border-radius: 3px #008ee2;
+    border: 1px solid #008ee2;
+    padding: 3px 6px;
+    font-size: 15px;
+}
+
+.btn-ver2:hover{
+    display: inline-block;
+    background-color: #FAFAFA;
+    border-radius: 3px #008ee2;
+    border: 1px solid #008ee2;
+    padding: 3px 6px;
+    font-size: 15px;
+}
+
+/*------Linklist--------*/
+.link-list{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+.link-list-item{
+    background: #FAFAFA;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border: 1px solid #C7CDD1;
+    margin-bottom: 10px;
+}
+
+.link-list-item:hover{
+    background: #eee;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border: 1px solid #C7CDD1;
+    margin-bottom: 10px;
+}
+
+.link-list-item a{
+    color: black;
+    display: block;
+    padding: 10px;
+    padding-left:0px;
+    text-decoration: none;  
+	font-size: 15px;
+    font-family: "RobotoCondensedBold";
+}
+
+.link-list-item a:hover{
+    color: black;
+    display: block;
+    padding: 10px;
+    padding-left:0px;
+    text-decoration: none;  
+	font-size: 15px;
+    font-family: "RobotoCondensedBold";
+}
+
+.link-list-img{
+    width: 25px;
+    padding: 10px 10px 10px 12px;
+}
+
+@media screen and (max-width:1200px) {
+    .link-list-img{
+        width: 25px;
+        padding: auto;
+        padding: 10px 7px 10px 10px;
+    }
+
+    .link-list-img:hover{
+        width: 25px;
+        padding: auto;
+        padding: 10px 7px 10px 10px;
+    }
+
+    .link-list-item a{
+        padding: 10px;
+        padding-left: 3px;
+
+    } 
+
+    .link-list-item a:hover{
+        padding: 10px;
+        padding-left: 3px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .link-list-img{
+        width: 20px;
+        padding: auto;
+        padding: 50%;
+    }
+
+    .link-list-img:hover{
+        width: 20px;
+        padding: auto;
+        padding: 50%;
+    }
+
+    .link-list-item a{
+        padding: 10px;
+        padding-left: 20px;
+    } 
+
+    .link-list-item a:hover{
+        padding: 10px;
+        padding-left: 20px;
+    }
+
+    .file-list-img{
+        width: 20px;
+        padding: auto;
+        padding: 50%;
+    }
+}
+
+/*------Filelist-------*/
+.file-list{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+    border: 1px solid #C7CDD1;
+    border-bottom: 0px;
+}
+
+.file-list-item{
+    background: #fff;
+    border-bottom: 1px solid #C7CDD1;
+    border-left:3px solid #0aa00a ;
+    margin-bottom:0px;
+}
+
+.file-list-item:hover{
+    background: #eef7ff;
+    border-bottom: 1px solid #C7CDD1;
+    border-left:3px solid #0aa00a ;
+    margin-bottom:0px;
+}
+
+.file-list-item a{
+    color: black;
+    display: block;
+    padding: 10px;
+    padding-left:0px;
+    text-decoration: none;  
+	font-size: 15px;
+    font-family: "RobotoCondensedBold";
+}
+
+.file-list-item a:hover{
+    color: black;
+    display: block;
+    padding: 10px;
+    padding-left:0px;
+    text-decoration: none;  
+	font-size: 15px;
+    font-family: "RobotoCondensedBold";
+}
+
+.file-list-img{
+    width: 25px;
+    padding: 10px 10px 10px 12px;
+}
+
+@media screen and (max-width:1200px) {
+    .file-list-img{
+        width: 25px;
+        padding: auto;
+        padding: 10px 7px 10px 10px;
+    }
+
+    .file-list-img:hover{
+        width: 25px;
+        padding: auto;
+        padding: 10px 7px 10px 10px;
+    }
+
+    .file-list-item a{
+        padding: 10px;
+        padding-left: 3px;
+
+    } 
+
+    .file-list-item a:hover{
+        padding: 10px;
+        padding-left: 3px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .file-list-img{
+        width: 20px;
+        padding: auto;
+        padding: 50%;
+    }
+
+    .file-list-img:hover{
+        width: 20px;
+        padding: auto;
+        padding: 50%;
+    }
+
+    .file-list-item a{
+        padding: 10px;
+        padding-left: 20px;
+    } 
+
+    .file-list-item a:hover{
+        padding: 10px;
+        padding-left: 20px;
+    }
+}
+
+
+/*-------Home-----------*/
+
+.card-header-CSMIE{
+    background-color: #FAFAFA;
+}
+.card-title-CSMIE{
+    font-size: 20px;
+}
+
+.info{
+    border:0;
+    border-spacing:20px;
+    padding-left:80px;
+    font-size: 14px;
+    line-height:20px;
+}
+
+td.course-information{
+    text-align: left;
+    padding-left: 20px;
+}
+
+
+.link{
+    color: #008ee2;
+    text-decoration: none;
+}
+
+.link:hover{
+    color: #008ee2;
+    text-decoration: none;
+}
+
+
+/*-------refer-to-website-----*/
+.refer-out-web{
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    width: 100%;
+    height: 400px;
+}
+
+.outer-reference-ver2{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.outer-reference-ver2-header{
+    background-color: #FAFAFA;
+}
+
+.outer-reference-ver2-title{
+    color: #000000;
+    text-align: center;
+    font-size: 16px;
+}
+
+/*--------Course Overview------*/
+
+.syllabus-layout{
+    width: 100%;
+}
+.syllabus-head{
+    font-size: medium;
+    border-bottom: 1px solid gray;
+}
+
+.syllabus-body{
+    border-bottom: 1px solid gray;
+}
+
+th.sy-id{
+    width: 20%;
+    text-align: left;
+    padding: 5px;
+}
+
+td.ov-id{
+    width: 20%;
+    text-align: left;
+    padding: 5px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.sy-details{
+    width: 60%;
+    text-align: left;
+    padding: 5px;
+}
+
+.sy-syllabus{
+    width: 20%;
+    text-align: right;
+    padding: 5px;
+}
+
+/*--------curriculum----------*/
+
+#no{
+    width:10%;
+    text-align: center;
+}
+
+#course{
+    width:20%;
+    text-align: center;
+}
+
+#course-title{
+    width:40%;
+    text-align: center;
+}
+
+#course-type{
+    width:10%;
+    text-align: center;
+}
+
+#homepage{
+    width:20%;
+    text-align: center;
+}
+
+td.no{
+    width:10%;
+    text-align: center;
+}
+
+td.course{
+    width:20%;
+    text-align: left;
+    padding-left: 15px;
+}
+
+td.course-title{
+    width:40%;
+    text-align: left;
+    padding-left: 15px;
+}
+
+td.course-type{
+    width:10%;
+    text-align: center;
+}
+
+td.homepage{
+    width:20%;
+    text-align: left;
+    padding-left: 15px;
+}
+
+td.homepage a{
+    text-decoration:none;
+    color: blue;
+}
+
+tr.pass{
+    background-color: #CCFFCC;
+}
+
+tr.Postponed{
+    background-color: #FFCCCC;
+}
+
+.tbhead{
+    background-color: #aaaaaa;
+}
+
+
+
+/*--------Syllabus----------*/
+.syllabus-layout{
+    width: 100%;
+}
+.syllabus-head{
+    font-size: medium;
+    border-bottom: 1px solid gray;
+}
+
+.syllabus-body{
+    border-bottom: 1px solid gray;
+}
+
+th.sy-date{
+    width: 20%;
+    text-align: left;
+    padding: 5px;
+}
+
+td.sy-date{
+    width: 20%;
+    text-align: left;
+    padding: 5px;
+    font-style: italic;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.sy-details{
+    width: 60%;
+    text-align: left;
+    padding: 5px;
+}
+
+.sy-due{
+    width: 20%;
+    text-align: right;
+    padding: 5px;
+}
+
+/*--------Assignmnet----------*/
+.assignmnet-layout{
+    width: 100%;
+}
+.assignmnet-head{
+    font-size: medium;
+    border-bottom: 1px solid gray;
+}
+
+.assignmnet-body{
+    border-bottom: 1px solid gray;
+}
+
+th.as-date{
+    width: 20%;
+    text-align: left;
+    padding: 5px;
+}
+
+td.as-date{
+    width: 20%;
+    text-align: left;
+    padding: 5px;
+    font-style: italic;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.as-details{
+    width: 60%;
+    text-align: left;
+    padding: 5px;
+}
+
+.as-details a{
+    color: #008ee2;
+}
+
+.as-details a:hover{
+    color: #008ee2;
+}
+
+.as-due{
+    width: 20%;
+    text-align: right;
+    padding: 5px;
+}
+
+td.as-due{
+    width: 20%;
+    text-align: right;
+    padding: 5px;
+    font-style: italic;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+/*--------background-color----*/
+
+.bg-gray{ background-color: #FAFAFA; }
+
+

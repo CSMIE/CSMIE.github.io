@@ -1,0 +1,159 @@
+<html>
+<head>
+	<title>e-Course</title>
+	<link rel="icon" href="image/CSMIE.ico" type="image/x-icon"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<link rel="stylesheet" href="layui-main/dist/css/layui.css" media="all">
+	<link rel="stylesheet" href="CSS/layout.css" type="text/css">
+	<link rel="stylesheet" href="CSS/element.css" type="text/css">
+	<link rel="stylesheet" href="CSS/style.css" type="text/css">
+	<script src="layui-main/dist/layui.js" charset="utf-8"></script>
+	<script src="js/elem.js" charset="utf-8"></script>
+	<script src="js/announce.js" charset="utf-8"></script>
+	<script src="/cdn.staticfile.org/layui/2.8.0/layui.js"></script>
+</head>
+
+<body>
+	<div class="layui-layout layui-layout-admin">
+		<!--subside-->
+		<div class="layui-side layui-bg-black">
+			<div class="layui-side-scroll">
+			  <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+			  	<ul class="layui-nav layui-nav-tree" lay-filter="test">
+					<li class="layui-nav-item">
+						<a href="e-Course.html">
+							<img  border="0" src="image/MSE.png" class="sidemark">
+						</a>
+					</li>
+
+					<li class="layui-nav-item">
+						<a href=" https://oc.sjtu.edu.cn/ " target="_blank"> 
+							<img  border="0" src="image/SJTU.png" class="sidemark">
+						</a>
+					</li>
+
+					<li class="layui-nav-item">
+						<a href="https://gitee.com/Jinhang_Qiu/Course-Materials" target="_blank">
+							<img  border="0" src="image/更多_more-app.png" class="sidemark">
+						</a>
+					</li>
+
+					<li class="layui-nav-item">
+						<a href=" https://www.icourse163.org/ " target="_blank">
+							<img  border="0" src="image/书籍1_book-one (1).png" class="sidemark">
+						</a>
+					</li>	
+
+					<li class="layui-nav-item">
+						<a href="https://leetcode.cn/" target="_blank"> 
+							<img  border="0" src="image/代码_code.png" class="sidemark"> 
+						</a>
+					</li>
+
+					<li class="layui-nav-item">
+						<a href=" https://mail.sjtu.edu.cn/zimbra/mail#1 " target="_blank"> 
+							<img  border="0" src="image/收件箱_inbox-r.png" class="sidemark">
+						</a>
+					</li>
+			  	</ul>
+			</div>
+		</div>
+		<!--subside-->
+		<!----------->
+		<!--BODY----->
+		<div class="layui-body">
+			<!-- 内容主体区域 -->
+			<div class="main-content">
+				<div class="layui-row layui-col-space30">
+					<div class="layui-col-md9">
+					  	<div class="grid-demo grid-demo-bg1">
+							<!--content-->
+							<div class="layui-header">
+								<!-- 头部区域（可配合layui 已有的水平导航） -->
+								<ul class="layui-nav layui-layout-left">
+									<div id="title">Dashboard</div>
+								</ul>
+								<ul class="layui-nav layui-layout-right">
+								  	<li class="layui-nav-item">
+										<img src="image/更多1_more-one (1).png" class="layui-nav-img">
+										<dl class="layui-nav-child">
+										<dd class="layui-nav-child-title">Dashboard View</dd>
+										<dd><a href="e-Course.html">Card View</a></dd>
+										<dd><a href="ListView.html">List View</a></dd>
+										<dd><a href="Grades.html">Grades</a></dd>
+										</dl>
+								  	</li>
+								</ul>
+							  </div>
+							<hr>
+							
+							
+							<div class="cardBox">
+								<div class="headerBox" style="background-color: #FDC010;">
+									<div style="text-align: right;"><a href="Homepage/2022-2023-1.html"><img src="image/更多1_more-one.png"></a></div>
+									<p><a title="2022-2023-1" style="cursor: pointer; color:white" onclick="viewXmInfo('${var.OMP_XM_ID}');"></a></p>
+								</div>
+								<div class="bodyBox"><a href="Homepage/2022-2023-1.html">
+									<b style="color: #FDC010;">2022-2023 Fall</b><br>Curriculum<br>UG-(2022-2023-1)-CSMIE
+								</a></div>
+							</div>
+						
+				
+							<div class="cardBox">
+								<div class="headerBox" style="background-color: #09BCD3;">
+									<div style="text-align: right;"><a href="Homepage/2022-2023-2.html"><img src="image/更多1_more-one.png"></a></div>
+									<p><a title="2022-2023-2" style="cursor: pointer; color:white" onclick="viewXmInfo('${var.OMP_XM_ID}');"></a></p>
+								</div>
+								<div class="bodyBox"><a href="Homepage/2022-2023-2.html">
+									<b style="color: #09BCD3;">2022-2023 Spring</b><br>Curriculum<br>UG-(2022-2023-2)-CSMIE
+								</a></div>
+							</div>
+																
+							<div class="cardBox">
+								<div class="headerBox" style="background-color:#E71F63;">
+									<div style="text-align: right;"><a href="Homepage/2022-2023-3.html"><img src="image/更多1_more-one.png"></a></div>
+									<p><a title="2022-2023-2" style="cursor: pointer; color:white" onclick="viewXmInfo('${var.OMP_XM_ID}');"></a></p>
+								</div>
+								<div class="bodyBox"><a href="Homepage/2022-2023-3.html" >
+									<b style="color: #E71F63;">2022-2023 Summer</b><br>Curriculum<br>UG-(2022-2023-3)-CSMIE
+								</a></div>
+							</div>
+						
+			  				<!--content-->
+					  	</div>
+					</div>
+					<div class="layui-col-md3">
+					  	<div class="grid-demo">
+							<div class="sideboard">
+								<div class="sidetitle">calendar</div><hr>
+								<div class="ws-demo-static"><div class="layui-inline" id="ID-laydate-static-2"></div></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--BODY----->
+		<!----------->
+		<!--footer--->
+		<div class="layui-footer">
+			<div class="layui-row layui-col-space15">
+				<div class="layui-col-md5">
+					<div class="grid-demo">
+						<div class="layui-btn-container">
+							<button type="button" class="layui-announce layui-btn-primary" lay-on="test-skin-custom">Announcement</button>
+						</div>
+					</div>
+				</div>
+				<div class="layui-col-md7">
+				  	<div class="grid-demo grid-demo-bg1">
+						<div class="cpy_details">Copyright &copy; 2023 Computer Science and Medical Interdisciplinary Engineering</div>
+				  	</div>
+				</div>
+			  </div>
+		</div>
+		<!--footer--->
+	</div>
+</body>
+</html>
