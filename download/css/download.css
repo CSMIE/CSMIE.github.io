@@ -1,0 +1,83 @@
+
+#csmie-events-subcontent{
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+/*-- title --*/
+
+.csmie-subtitle {
+    position: relative;
+    margin-bottom: 0.05rem;
+    text-align: left;
+    left: 0%;
+    line-height: 30px;
+}
+ 
+.csmie-subtitle .en {
+    font-size: 65px;
+    color: rgba(215, 218, 219, 0.15);
+    font-family:Arial, Helvetica, sans-serif;
+    position:absolute;
+    font-weight: bold;
+}
+ 
+.csmie-subtitle .tit {
+    position: absolute;
+    font-size: 32px;
+    font-weight:bold;
+    color: #023474;
+    font-family: 微软雅黑;
+}
+
+/*-- location --*/
+
+div.location{
+	font-size:16px;
+	font-family: 微软雅黑;
+	text-align: right;
+	color: #01478e;
+	font-weight: bold;
+}
+
+div.location a{
+	font-size:16px;
+	font-family: 微软雅黑;
+	text-align: right;
+	color: #01478e;
+	font-weight: bold;
+    padding-bottom: 10px;
+}
+
+img.location_img{
+   width: 30px;
+   padding-bottom: 0px;
+   vertical-align:middle;
+}
+
+/*-- list-nav --*/
+
+#download-nav-tab-header{
+    color: #023474;
+    font-weight: bold;
+}
+
+#download-tab-link{
+    background-color:transparent;
+}
+
+#download-list-badge{
+    background-color: #01478e;
+    margin-right: 15px;
+}
+
+#download-nav-tab-link{
+    color: #000;
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+#tab-content-card{
+    margin-bottom: 15px;
+}

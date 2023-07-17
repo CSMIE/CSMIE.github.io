@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<link rel="shortcut icon" href="CSE-MED">
+<title>统一身份认证</title>
+<link rel="icon" href="image/CSMIE.ico" type="image/x-icon"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" href="css/login.css" type="text/css" />
+
+
+<div class="head">
+  <table class="header">
+    <tbody>
+      <tr valign="middle">
+        <td id="headerimg">
+          <a href=""><img src="image/csmie_login/CSMIE_CAS.png" class="login_header"></a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+<body>
+
+<div class="content">
+    <div class="main_content">
+        <table>
+            <tbody style="width: 100%;">
+                <tr>
+                    <td class="image_login">
+                        <img src="image/csmie_login/Login_bg.png" alt="Login" class="login">
+                    </td>
+                    <td class="main_ver">
+                        <div class="title">统一身份认证</div>
+                        <br>
+                        <div class="list_login">
+                            <label class="section">用户名</label>
+                            <input type="text" id="Account" placeholder="Account">
+                            <label class="section">密码</label>
+                            <input type="password" id="password" placeholder="Password">
+                            <label class="section">身份认证</label>
+                            <select id="country" name="country">
+                                <option value="australia">Staff</option>
+                                <option value="canada">Student</option>
+                                <option value="usa">Guest</option>
+                            </select>
+                            <button onclick="myFunction()">登录</button><br>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+            <!--------------------------------------->
+        <script>
+            function myFunction() {
+                var psw,ans;
+                psw = "123456!";
+                ans = document.getElementById("password").value;
+                if(ans == psw)
+                {
+                    location.href=" https://csmie.github.io/e-Course/oc.html ";
+                }
+
+                else
+                {
+                    alert("Password Failed! Please Input Again!");
+                }
+            }
+        </script>
+        <!--------------------------------------->
+        <!-------------copyright----------------->
+        <div class="copyright_login">
+            Copyright &copy; 2023 - Department of Computer Science and Medical Interdisciplinary Engineering<br>
+            Questions or comments regarding us? Send e-mail to the course Staffs or TAs.
+        </div>
+    </div>
+</div>
+<!----CopyRight-->
+</body>
+</html>
+
+

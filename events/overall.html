@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Department of Computer Science and Medical Interdisciplinary Engineering</title>
+  <meta charset="utf-8">
+  <link rel="icon" href="../image/CSMIE.ico" type="image/x-icon"/>
+  <meta name="viewpot" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="css/events.css" type="text/css" />
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-expand-sm navbar-light fixed-top p-1" id="csmie-header">
+        <div class="container-fluid">
+        <!-- Brand/logo --> 
+        <a class="navbar-brand" href="https://csmie.github.io/index.html"><img src="../image/CSMIE_title_package/CSMIE_white_bold.png" alt="logo" class="csmie-header-img"></a>
+
+        <div class="d-flex">        
+            <ul class="navbar-nav justify-content: space-between csmie-head-link">
+                <li class="nav-item"><a class="nav-link" id="csmie-header-link" href="../events/overall.html">学期信息</a></li>
+                <li class="nav-item"><a class="nav-link" id="csmie-header-link" href="https://gitee.com/Jinhang_Qiu/2022-2026_CSE_Course-structure" target="_blank">教学文件</a></li>
+                <li class="nav-item dropdown" id="csmie-header-list">
+                    <a class="nav-link" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">下载专区</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                      <li id="csmie-header-list-link"><a class="dropdown-item" href="../download/download.html" >本科生人才培养</a></li>
+                      <li id="csmie-header-list-link"><a class="dropdown-item" href="#" >常用表格下载</a></li>
+                      <li id="csmie-header-list-link"><a class="dropdown-item" href="#">医学本科教学</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown" id="csmie-header-list">
+                    <a class="nav-link" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">教学平台</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                      <li id="csmie-header-list-link"><a class="dropdown-item" href="https://csmie.github.io/e-Course/login.html" >e-Course</a></li>
+                      <li id="csmie-header-list-link"><a class="dropdown-item" href="https://oc.sjtu.edu.cn/" >Canvas</a></li>
+                      <li id="csmie-header-list-link"><a class="dropdown-item" href="https://www.icourse163.org/">MOOC</a></li>
+                      <li id="csmie-header-list-link"><a class="dropdown-item" href="https://www.xuetangx.com/">学堂在线</a></li>
+                      <li id="csmie-header-list-link"><a class="dropdown-item" href="http://mooc2-ans.chaoxing.com/visit/interaction?moocDomain=http://mooc1-1.chaoxing.com">超星平台</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <button type="button" class="btn btn-outline-*" id="csmie-header-more" data-bs-toggle="modal" data-bs-target="#myModal">
+                <img src="../image/icon_page/link-page.png" id="csmie-link-page-img">
+            </button>
+        <!-- Links -->
+        </div>
+        </div>  
+    </nav>
+    
+
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" id="csmie-link-page">
+            <!-- More-Link-header -->
+                <div class="modal-header">
+                    <img src="../image/CSMIE_title_package/CSMIE_white_bold.png" alt="logo" class="csmie-header-img">
+                    <button type="button" class="btn" data-bs-dismiss="modal"><img src="../image/icon_page/close.png" style="width: 20px;"></button>
+                </div>
+                
+            <!-- More-Link-content -->
+                <div class="modal-body">
+                    <ul class="nav justify-content-start" >
+                        <li class="nav-item "><div class="navbar-text" id="csmie-link-page-quick-title">常用链接：</div></li>
+                        <li class="nav-item"><a class="nav-link" id="csmie-link-page-link-quick" href="https://gitee.com/dashboard" target="_blank">统一认证登录</a></li>
+                        <li class="nav-item"><a class="nav-link" id="csmie-link-page-link-quick" href="https://mail.163.com/" target="_blank">163邮箱登录</a></li>
+                        <li class="nav-item"><a class="nav-link" id="csmie-link-page-link-quick" href="https://mail.sjtu.edu.cn/zimbra/" target="_blank">Zimbra邮箱</a></li>
+                    </ul>
+                    <div class="row">
+                        <div class="col-sm-2 p-3">
+                            <ul class="nav flex-column">
+                                <li class="nav-item"><a class="nav-link" id="csmie-link-page-subtitle" href="../events/overall.html">学期信息</a></li>
+                                <li class="nav-item"><a class="nav-link" id="csmie-link-page-link" href="https://i.sjtu.edu.cn/xtgl/login_slogin.html" target="_blank">教学信息服务网</a></li>
+                                <li class="nav-item"><a class="nav-link" id="csmie-link-page-link" href="https://jwc.sjtu.edu.cn/" target="_blank">上海交通大学教务处</a></li>
+                                <li class="nav-item"><a class="nav-link" id="csmie-link-page-link" href="https://bjwb.seiee.sjtu.edu.cn/" target="_blank">上海交大电院教务处</a></li>
+                                <li class="nav-item"><a class="nav-link" id="csmie-link-page-link" href="https://www.seiee.sjtu.edu.cn/" target="_blank">电子信息与电气工程学院</a></li>
+                                <li class="nav-item"><a class="nav-link" id="csmie-link-page-link" href="https://my.sjtu.edu.cn/ui/task" target="_blank">我的数字交大</a></li>
+                                <li class="nav-item"><a class="nav-link" id="csmie-link-page-link" href="https://plus.sjtu.edu.cn/course-plus/#/2023-2024_1/browse" target="_blank">SJTU Plus</a></li>
+                                <li class="nav-item"><a class="nav-link" id="csmie-link-page-link" href="https://gitee.com/Jinhang_Qiu/2022-2026_CSE_Course-structure" target="_blank">CSMIE</a></li>
+                                <li class="nav-item"><a class="nav-link" id="csmie-link-page-subtitle" href="../download/download.html">下载专区</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-2 p-3">
+                            <ul class="nav flex-column">
+                                <li class="nav-item "><div class="navbar-text" id="csmie-link-page-subtitle">课程平台</div></li>
+                                <li class="nav-item "><div class="navbar-text" id="csmie-link-page-sub-subtitle">在线课程</div></li>
+                                <li class="nav-item"><a class="nav-link" id="csmie-link-page-link" href="https://www.icourse163.org/" target="_blank">中国大学MOOC</a></li>
+                                <li class="nav-item"><a class="nav-link" id="csmie-link-page-link" href="https://www.xuetangx.com/" target="_blank">学堂在线</a></li>
+                                <li class="nav-item"><a class="nav-link" id="csmie-link-page-link" href="https://www.cnmooc.org/home/index.mooc" target="_blank">好大学在线</a></li>
+                                <li class="nav-item"><a class="nav-link" id="csmie-link-page-link" href="https://share.dyweb.sjtu.cn/" target="_blank">传承·交大</a></li>
+                                <li class="nav-item"><a class="nav-link" id="csmie-link-page-link" href="https://csdiy.wiki/" target="_blank">CS·DIY</a></li>
+                                <li class="nav-item "><div class="navbar-text" id="csmie-link-page-sub-subtitle">课程中心</div></li>
+                                <li class="nav-item"><a class="nav-link" id="csmie-link-page-link" href="https://oc.sjtu.edu.cn/" target="_blank">CANVAS@SJTU</a></li>
+                                <li class="nav-item"><a class="nav-link" id="csmie-link-page-link" href="https://csmie.github.io/e-Course/login.html" target="_blank">e-Course</a></li>
+                                <li class="nav-item"><a class="nav-link" id="csmie-link-page-link" href="https://acm.sjtu.edu.cn/wiki/%E8%AF%BE%E7%A8%8B%E4%B8%AD%E5%BF%83" target="_blank">ACM课程中心</a></li>
+                                <li class="nav-item"><a class="nav-link" id="csmie-link-page-link" href="https://gitee.com/Jinhang_Qiu/Course-Materials" target="_blank">CSMIE课程中心</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-2 p-3">
+                            <ul class="nav flex-column">
+                                <li class="nav-item "><div class="navbar-text" id="csmie-link-page-subtitle">程序设计</div></li>
+                                <li class="nav-item"><a class="nav-link" id="csmie-link-page-link" href="https://pintia.cn/problem-sets/dashboard" target="_blank">PTA程序设计</a></li>
+                                <li class="nav-item"><a class="nav-link" id="csmie-link-page-link" href="https://leetcode.cn/" target="_blank">LeetCode</a></li>
+                                <li class="nav-item"><a class="nav-link" id="csmie-link-page-link" href="https://acm.sjtu.edu.cn/OnlineJudge/" target="_blank">ACM-OJ</a></li>
+                                <li class="nav-item"><a class="nav-link" id="csmie-link-page-link" href="http://poj.org/" target="_blank">POJ</a></li>
+                                <li class="nav-item"><a class="nav-link" id="csmie-link-page-link" href="https://www.luogu.com.cn/" target="_blank">洛谷</a></li>
+                                <li class="nav-item"><a class="nav-link" id="csmie-link-page-link" href="https://vjudge.net/" target="_blank">Virtual Judge</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-2 p-3">
+                            <ul class="nav flex-column">
+                                <li class="nav-item "><div class="navbar-text" id="csmie-link-page-subtitle">科技创新</div></li>
+                                <li class="nav-item "><div class="navbar-text" id="csmie-link-page-sub-subtitle">科创平台</div></li>
+                                <li class="nav-item"><a class="nav-link" id="csmie-link-page-link" href="https://prp.jwc.sjtu.edu.cn/DefaultPractice.aspx" target="_blank">PRP管理平台</a></li>
+                                <li class="nav-item"><a class="nav-link" id="csmie-link-page-link" href="https://cxcy.sjtu.edu.cn/CXCY/SJTU" target="_blank">大学生创新平台</a></li>
+                                <li class="nav-item"><a class="nav-link" id="csmie-link-page-link" href="https://www.saikr.com/" target="_blank">大学生竞赛信息网</a></li>
+                                <li class="nav-item "><div class="navbar-text" id="csmie-link-page-sub-subtitle">文献资源</div></li>
+                                <li class="nav-item"><a class="nav-link" id="csmie-link-page-link" href="ttps://www.lib.sjtu.edu.cn/f/main/index.shtml" target="_blank">上海交通大学图书馆</a></li>
+                                <li class="nav-item"><a class="nav-link" id="csmie-link-page-link" href="https://www.cnki.net/" target="_blank">中国知网</a></li>
+                                <li class="nav-item"><a class="nav-link" id="csmie-link-page-link" href="https://dict.cnki.net/index" target="_blank">学术翻译</a></li>
+                        </ul>
+                        </div>
+                        <div class="col-sm-2 p-3">
+                            <ul class="nav flex-column">
+                                <li class="nav-item "><div class="navbar-text" id="csmie-link-page-subtitle">研究生招生在线</div></li>
+                                <li class="nav-item "><div class="navbar-text" id="csmie-link-page-sub-subtitle">研招网</div></li>
+                                <li class="nav-item"><a class="nav-link" id="csmie-link-page-link" href="https://admission.pku.edu.cn/" target="_blank">北京大学研招网</a></li>
+                                <li class="nav-item"><a class="nav-link" id="csmie-link-page-link" href="https://yzb.sjtu.edu.cn/zsjz/ssszs.htm" target="_blank">上海交通大学研招网</a></li>
+                                <li class="nav-item"><a class="nav-link" id="csmie-link-page-link" href="http://www.grs.zju.edu.cn/yjszs/" target="_blank">浙江大学研招网</a></li>
+                                <li class="nav-item"><a class="nav-link" id="csmie-link-page-link" href="https://yzb.nju.edu.cn/47863/list.htm" target="_blank">南京大学研招网</a></li>
+                                <li class="nav-item"><a class="nav-link" id="csmie-link-page-link" href="https://yz.ustc.edu.cn/?num=-1" target="_blank">中国科技大学研招网</a></li>
+                                <li class="nav-item "><div class="navbar-text" id="csmie-link-page-sub-subtitle">研考报名</div></li>
+                                <li class="nav-item"><a class="nav-link" id="csmie-link-page-link" href="https://www.neea.edu.cn/" target="_blank">中国教育考试网</a></li>
+                                <li class="nav-item "><div class="navbar-text" id="csmie-link-page-sub-subtitle">信息在线</div></li>
+                                <li class="nav-item"><a class="nav-link" id="csmie-link-page-link" href="http://home.cskaoyan.com/#/Postgraduateentranceexamination" target="_blank">王道教育</a></li>
+                                <li class="nav-item"><a class="nav-link" id="csmie-link-page-link" href="http://cskaoyan.com/forum.php" target="_blank">王道论坛</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-2 p-3">
+                            <ul class="nav flex-column">
+                                <li class="nav-item "><div class="navbar-text" id="csmie-link-page-subtitle">医学专栏</div></li>
+                                <li class="nav-item "><div class="navbar-text" id="csmie-link-page-sub-subtitle">医学教育</div></li>
+                                 <li class="nav-item"><a class="nav-link" id="csmie-link-page-link" href="http://mooc2-ans.chaoxing.com/visit/interaction?moocDomain=http://mooc1-1.chaoxing.com" target="_blank">超星平台</a></li>
+                                <li class="nav-item"><a class="nav-link" id="csmie-link-page-link" href="https://gitee.com/Jinhang_Qiu/Download" target="_blank">Awesome-MED</a></li>
+                                <li class="nav-item"><a class="nav-link" id="csmie-link-page-link" href="https://xrlab.shsmu.edu.cn/mengoo/#/" target="_blank">虚拟实验中心</a></li>
+                                <li class="nav-item "><div class="navbar-text" id="csmie-link-page-sub-subtitle">SoM常用网址</div></li>
+                                <li class="nav-item"><a class="nav-link" id="csmie-link-page-link" href="https://www.shsmu.edu.cn/jwc/" target="_blank">教务处</a></li>
+                                <li class="nav-item"><a class="nav-link" id="csmie-link-page-link" href="https://jwstu.shsmu.edu.cn/Home/Index" target="_blank">教学系统</a></li>
+                                <li class="nav-item"><a class="nav-link" id="csmie-link-page-link" href="https://xgb.shsmu.edu.cn/" target="_blank">学工在线</a></li>
+                                <li class="nav-item"><a class="nav-link" id="csmie-link-page-link" href="http://jfzx.shsmu.edu.cn/(S(iorzqt2uazccwhdcgp3cnwrz))/index.aspx" target="_blank">教学辅助中心</a></li>
+                                <li class="nav-item "><div class="navbar-text" id="csmie-link-page-sub-subtitle">理论学习</div></li>
+                                <li class="nav-item"><a class="nav-link" id="csmie-link-page-link" href="index/lg-llxx.html" target="_blank">身份验证系统</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      
+    <div class="container-fluid" id="csmie-content">
+       <img src="image/page/events.png" style="width: 100%;"> 
+    </div>
+    <!-- title -->
+    <div class="row container" id="csmie-events-subcontent">
+        <div class="col">
+            <div class="csmie-subtitle">
+                <div class="en">NEWS</div><div class="tit">学期信息</div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="location">
+                <a href="https://csmie.github.io/index.html">
+                  <img src="image/icon_park/home.png" alt="CSMIE" class="location_img">
+                </a>
+                <a href="https://csmie.github.io/index.html">首页</a>
+                ·
+                <a href="#">学期信息</a>
+              </div>
+        </div>
+    </div>
+
+
+    <div class="row container" id="csmie-events-subcontent">
+        <!--ver-lin1-->
+        <div class="col-sm-12 col-lg-6">
+            <ul class="nav flex-column csmie-list1">       
+                <li>
+                    <a href="https://gitee.com/Jinhang_Qiu/2022-2026_CSE_Course-structure/raw/master/02%20%E5%9F%B9%E5%85%BB%E6%96%B9%E6%A1%88%E6%9F%A5%E8%AF%A2/%E5%9F%B9%E5%85%BB%E6%96%B9%E6%A1%88.pdf" class="link">
+                        <div class="title">计算机科学与技术-临床医学交叉项目（四年制）专业课程培养方案</div>
+                        <div class="em"><span>27</span><em>2022-06</em></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://gitee.com/Jinhang_Qiu/2022-2026_CSE_Course-structure/raw/master/03%20%E8%AF%BE%E7%A8%8B%E5%A4%A7%E8%A1%A8%E4%B8%8E%E6%95%99%E5%AD%A6%E6%97%A5%E5%8E%86/02%20%E5%AD%A6%E6%9C%9F%E6%A0%A1%E5%8E%86/2022-2023-3.pdf" class="link" target="_blank">
+                        <div class="title">关于发布2022-2023-3（夏季学期）校历的通知</div>
+                        <div class="em"><span>15</span><em>2023-07</em></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--ver-lin2-->
+        <div class="col-sm-12 col-lg-6">
+            <ul class="nav flex-column csmie-list1">       
+                <li>
+                    <a href="#" class="link">
+                        <div class="title">关于2022-2023学年春季学期期末考试时间安排发布的通知</div>
+                        <div class="em"><span>23</span><em>2023-03</em></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="link">
+                        <div class="title">关于2022-2023学年春季学期学生选课通知</div>
+                        <div class="em"><span>22</span><em>2023-02</em></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- end -->
+    </div>
+
+
+
+    <!-- footer -->
+    <footer class="section footer-classic section-sm">
+        <div class="container"><div class="row row-30">
+            <div class="col-lg-4 wow fadeInLeft">
+            <!--Brand-->
+                <a class="brand" href="https://csmie.github.io/index.html"><img class="brand-logo-light" src="../image/CSMIE_title_package/CSMIE_white_bold.png"></a>
+                <p class="footer-classic-description offset-top-0 offset-right-25">
+                    Cultivate professionals with knowledge in both computer science and medicine, and to promote 
+                    the application and innovation of computer technology in the field of medicine. 
+                </p>
+            </div>
+
+            <div class="col-lg-3 col-sm-8 wow fadeInUp">
+                <P class="footer-classic-title">contact info</P>
+                <div id="csmie-footer-font-m" >
+                    <img src="../image/icon_page/github.png" style="width: 20px;">
+                    <a class="d-inline-block" href="https://github.com/CSMIE/CSMIE.github.io">csmie.github.com</a>
+                </div>
+
+                <div id="csmie-footer-font-m" >
+                    <img src="../image/icon_page/mailbox.png" style="width: 20px;">
+                    <a class="d-inline-block" href="mailto:CSMIE2022@outlook.com">CSMIE2022@outlook.com</a>
+                </div>
+                <ul class="footer-classic-nav-list">
+                    <li id="csmie-footer-font-m">Mon-Wed：10:00 AM - 15:00 PM</li>
+                    <li id="csmie-footer-font-m">Thu-Fri：13:00 AM - 14:00 PM</li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-sm-4 wow fadeInUp" data-wow-delay=".3s">
+                <P class="footer-classic-title">Quick Links</P>
+                <ul class="footer-classic-nav-list">
+                    <li id="csmie-footer-font-m">
+                        <img src="../image/icon_page/homepage.png" style="width: 20px;">
+                        <a class="d-inline-block" href="https://csmie.github.io/index.html">Home</a>
+                    </li>
+                    <li id="csmie-footer-font-m" >
+                        <img src="../image/icon_page/legal-info.png" style="width: 20px;">
+                        <a class="d-inline-block" href="../legal_info.html">Legal Info</a>
+                    </li>
+                    <li id="csmie-footer-font-m">
+                        <img src="../image/icon_page/key.png" style="width: 20px;">
+                        <a class="d-inline-block" href="#">CAS</a>
+                    </li>
+                    <li id="csmie-footer-font-m" >
+                        <img src="../image/icon_page/e-course.png" style="width: 20px;">
+                        <a class="d-inline-block" href="https://csmie.github.io/e-Course/login.html" target="_blank">e-Course</a>
+                    </li>
+                
+                </ul>
+            </div>
+            <div class="col-lg-3 wow fadeInLeft" data-wow-delay=".2s">
+                <P class="footer-classic-title">newsletter</P>
+                <form>
+                    <div class="mb-3"><input class="form-control form-control-sm" type="text" placeholder="Username" aria-label="Username"></div>
+                    <div class="mb-3"><input class="form-control form-control-sm" type="text" placeholder="Password" aria-label="Password"></div>
+                    <button type="submit" class="btn-light btn-sm">Submit</button>
+                </form>
+            </div>
+
+        </div></div>
+
+        <div class="container wow fadeInUp" data-wow-delay=".4s" id="csmie-footer-copyright">
+            <div class="footer-classic-aside" id="csmie-footer-font-m">
+                <p>Copyright <span>&copy;&nbsp;</span><span class="copyright-year"></span> Computer Science and Medical Interdisciplinary Engineering .All Rights Reserved</p>
+                <p>Design by <a href="https://www.templatemonster.com" id="csmie-footer-font-m">TemplateMonster</a></p> 
+            </div>
+        </div>
+    </footer>
+      
+    
+
+
+
+</body>
+</html>
