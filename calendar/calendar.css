@@ -1,0 +1,20 @@
+#calendar-nav{
+    background-color: transparent;
+}
+
+#calendar-header-img{
+    height: 60px;
+    text-align: left;
+}
+
+#calendar-header{
+    
+    text-align: left;
+    float: left;
+}
+
+#calendar-title{
+    line-height: 60px;
+    font-weight: bold; 
+    font-family: 微软雅黑;
+}
