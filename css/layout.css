@@ -1,5 +1,5 @@
 a{
-    text-decoration: 0;
+    text-decoration: none;
 }
 
 .csmie-header-img{
@@ -288,7 +288,7 @@ a{
 
 #csmie-nav-tab-link{
     color: #023474;
-    font-size: large;
+    font-size: 16px;
     text-align: left;
     margin-bottom: 0;
 }
