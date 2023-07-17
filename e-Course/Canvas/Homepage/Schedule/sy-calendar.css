@@ -1,0 +1,117 @@
+table.calendar {
+    font-family: arial, helvetica;
+    font-size: 10pt;
+    empty-cells: show;
+    border: 1px solid #000000;
+    border-collapse: collapse;
+}
+
+table.calendar tr td {
+    border: 1px solid #000000;
+}
+
+table.calendar tr {
+    vertical-align: top;
+    height: 6em;
+    background: #eeeeee;
+}
+
+table.calendar thead tr {
+    text-align: center;
+    background: #444444;
+    color: #ffffff;
+    height: auto;
+    font-weight: bold;
+}
+
+.lecture {
+    background: #ffffaa;
+}
+
+.lecture2 {
+    background: #ddddbb;
+}
+
+.lab {
+    background: #ffddcc;
+}
+
+.tutorial {
+    background: #dddd55;
+}
+
+.quiz {
+    background: antiquewhite;
+}
+
+.exercise {
+    background: #ccecff;
+}
+
+.holiday {
+    background: #ccffcc;
+}
+
+.special {
+    background: #aaaaff;
+}
+
+.important {
+    background: #ffaaaa;
+}
+
+.reading {
+    color: #3333ff;
+}
+
+.deadline {
+    color: #ff0000;
+}
+
+.assignment {
+    color: #0aa00a;
+}
+
+.date {
+    color: #444444;
+}
+
+.menuHead {
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.menuItem {
+    font-family: "Trebuchet MS", Arial, Verdana;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.titleHead {
+    font-family: "Trebuchet MS", Arial, Verdana;
+    font-size: 28px;
+}
+
+.titleHead.header {
+    padding-left: 58px;
+    padding-top: 2px;
+    color: white;
+}
+
+#title-sy{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: blue;
+    text-align: center;
+    line-height: normal;
+}
+
+.a{
+    color: blue;
+    text-decoration: none;
+
+}

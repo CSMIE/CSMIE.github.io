@@ -1,0 +1,257 @@
+<html>
+<head>
+	<title>e-Course</title>
+	<link rel="icon" href="image/CSMIE.ico" type="image/x-icon"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<link rel="stylesheet" href="CSS/layout.css" type="text/css">
+	<link rel="stylesheet" href="CSS/element.css" type="text/css">
+	<link rel="stylesheet" href="CSS/style.css" type="text/css">
+    <link rel="stylesheet" href="layui-main/dist/css/layui.css" type="text/css">
+	<script src="JS/elem.js" charset="utf-8"></script>
+	<script src="JS/announce.js" charset="utf-8"></script>
+	<script src="JS/print.js" charset="utf-8"></script>
+	<script src="/cdn.staticfile.org/layui/2.8.0/layui.js"></script>
+	<script src="layui-main/dist/layui.js" charset="utf-8"></script>
+</head>
+
+<body>
+	<div class="layui-layout layui-layout-admin">
+		<!--subside-->
+		<div class="layui-side layui-bg-black">
+			<div class="layui-side-scro9.5">
+			  <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+			  	<ul class="layui-nav layui-nav-tree" lay-filter="test">
+					<li class="layui-nav-item">
+						<a href="https://computersciencekaoyan.github.io/Online%20Course/e-Course">
+							<img  border="0" src="image/MSE.png" class="sidemark">
+						</a>
+					</li>
+
+					<li class="layui-nav-item">
+						<a href=" https://oc.sjtu.edu.cn/ " target="_blank"> 
+							<img  border="0" src="image/SJTU.png" class="sidemark">
+						</a>
+					</li>
+
+					<li class="layui-nav-item">
+						<a href="https://gitee.com/Jinhang_Qiu/Course-Materials" target="_blank">
+							<img  border="0" src="image/更多_more-app.png" class="sidemark">
+						</a>
+					</li>
+
+					<li class="layui-nav-item">
+						<a href=" https://www.icourse163.org/ " target="_blank">
+							<img  border="0" src="image/书籍1_book-one (1).png" class="sidemark">
+						</a>
+					</li>	
+
+					<li class="layui-nav-item">
+						<a href="https://leetcode.cn/" target="_blank"> 
+							<img  border="0" src="image/代码_code.png" class="sidemark"> 
+						</a>
+					</li>
+
+					<li class="layui-nav-item">
+						<a href=" https://mail.sjtu.edu.cn/zimbra/mail#1 " target="_blank"> 
+							<img  border="0" src="image/收件箱_inbox-r.png" class="sidemark">
+						</a>
+					</li>
+			  	</ul>
+			</div>
+		</div>
+		<!--subside-->
+		<!----------->
+		<!--BODY----->
+		<div class="layui-body">
+			<!-- 内容主体区域 -->
+			<div class="main-content">
+				<div class="layui-row layui-col-space30">
+					<div class="layui-header header">
+						<!-- 头部区域（可配合layui 已有的水平导航） -->
+						<ul class="layui-nav layui-layout-left e-course-title-left">
+							<a href="#" id="Homepage-title">UG-(2022-2023-3)-CS5503-Problem solving and Practice II</a>
+						</ul>
+					</div>
+					<div class="layui-col-md9" style="overflow: none;">
+					  	<div class="grid-demo grid-demo-bg1">
+							<!--content-->
+							<div class="layui-col-md3">
+									<div class="layui-panel" style="width: 160px; margin: 0px;">
+									  <ul class="layui-menu" id="demo-menu">
+										<div class="subside-menu-title">2022-2023,Summer</div>
+										<li><div class="layui-menu-body-title"><a href="#home">Home</a></div></li>
+										
+										<li><div class="layui-menu-body-title"><a href="#Assignments">Assignments</a></div></li>
+									  </ul>
+									</div>
+								</div>
+								<div class="layui-col-md8">
+								<!---->
+								<!--HOME-->
+								<div class="layui-row course-main-title-overall">
+									<div class="layui-col-md9">
+									  <div class="grid-demo grid-demo-bg1"><div class="course-main-title" id="home">Problem solving and Practice II</div></div>
+									</div>
+									<div class="layui-col-md3">
+									  <div class="grid-demo main-title-btn"><input value='Print' type='button' onclick='handlePrint()' class="btn-ver2"/></div>
+									</div>
+								</div>
+								<div class="layui-card">
+									<div class="layui-card-header card-header-CSMIE"><div class="card-title-CSMIE">Overview</div></div>
+									<div class="layui-card-body">
+                                        程序设计思想与方法课程主要是讲授语法基础和基本算法，这些知识对于解决实际问题往往有些力不从心。 
+                                        而"问题求解与实践" 是一门提高型的计算机程序设计课程，其目的就是为了提高学生编程解决实际问题的
+                                        能力。 本课程内容涉及数学问题、数据结构、算法策略（贪心、动态规划）、智能计算（神经计算等）等
+                                        方面。数据结构、算法策略是经典计算机算法的内容，而智能计算则是近年来流行的解决问题的一类算法。
+                                        两者结合可以使得学生更好的了解算法的方方面面。本课程对于算法思路的讲解通俗易懂，可以使学生迅速
+                                        掌握算法的要点。
+									</div>
+								</div>
+								<div class="layui-card">
+									<div class="layui-card-header card-header-CSMIE"><div class="card-title-CSMIE">Course Information</div></div>
+									<div class="layui-card-body">
+										<table cellspacing="20px" cellpadding="2" class="info"><tbody>
+											<tr>
+												<td valign="top"><div align="right"><b>Textbook</b></div></td>
+												<td class="course-information">
+													N/A<br>
+												</td>
+											</tr>
+											<tr>
+												<td valign="top"><div align="right"><b>Credit</b></div></td>
+												<td class="course-information">5 Units</td>
+											</tr>	
+											<tr>
+												<td valign="top"><div align="right"><b>Grading</b></div></td>
+												<td class="course-information">
+													Lab: 25+25+10+15+25=100
+												</td>
+											</tr>	
+											
+										</tbody></table>
+									</div>
+								</div>
+								<div class="layui-card">
+									<div class="layui-card-header card-header-CSMIE"><div class="card-title-CSMIE">Lecture Videos</div></div>
+									<div class="layui-card-body">
+										<!--Linklist-->
+										<ul class="link-list">
+											
+
+											<li class="link-list-item">
+												<div class="layui-row">
+													<div class="layui-col-xs1">
+													  	<div class="grid-demo grid-demo-bg1"><img src="image/main-content-element/link-three_black.png" class="link-list-img"></div>
+													</div>
+													<div class="layui-col-xs11">
+													  	<div class="grid-demo"><a href="https://github.com/ " target="_blank">GitHub</a></div>
+													</div>
+												</div>
+											</li>
+
+										<!--Linklist-->
+									</div>
+								</div>
+								<!--HOME-->
+								
+								<!--Assignments-->
+								<div class="main-title" id="Assignments">Assignments</div>
+								<!--Assignments-->
+								<table class="assignmnet-layout">
+									<thead><tr class="assignmnet-head">
+										<th class="as-date">Date</th>
+										<th class="as-details">Details</th>
+										<th class="as-due">Due</th>
+									</tr></thead>
+									<tbody>
+										<tr class="assignmnet-body">
+											<td class="as-date">Nil</td>
+											<td class="as-details">Lab1. QQI-Format</a></td>
+											<td class="as-due">Nil</td>
+										</tr>
+										<tr class="assignmnet-body">
+											<td class="as-date">Nil</td>
+											<td class="as-details">Lab2. int2048</td>
+											<td class="as-due"></td>
+										</tr>
+                                        <tr class="assignmnet-body">
+											<td class="as-date">Nil</td>
+											<td class="as-details">Lab3A. Basic-Interpreter</a></td>
+											<td class="as-due">Nil</td>
+										</tr>
+										<tr class="assignmnet-body">
+											<td class="as-date">Nil</td>
+											<td class="as-details">Lab3B. Python-Interpreter</td>
+											<td class="as-due"></td>
+										</tr>
+                                        <tr class="assignmnet-body">
+											<td class="as-date">Nil</td>
+											<td class="as-details">Lab4. Raytracer</a></td>
+											<td class="as-due">Nil</td>
+										</tr>
+									</tbody>
+								</table>
+								<!--Resources-->
+								
+								
+								<!--Resources-->
+								</div>
+			  				<!--content-->
+					  	</div>
+					</div>
+					<div class="layui-col-md3">
+					  	<div class="grid-demo">
+							<div class="sideboard">
+								<!--button-ver2-->
+							<ul class="link-list">
+								<li class="btn">
+									<div class="layui-row">
+										<div class="layui-col-xs3">
+											<div class="grid-demo grid-demo-bg1"><img src="image/main-content-element/trend.png" class="btn-img"></div>
+										</div>
+										<div class="layui-col-xs9">
+											<div class="grid-demo"><a href="https://computersciencekaoyan.github.io/Online%20Course/Grades.html">View Course Grades</a></div>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<!--button-ver2-->
+								<div class="sidetitle">calendar</div><hr>
+								<div class="ws-demo-static">
+									<div class="layui-inline" id="ID-laydate-static-2"></div>
+									<script src="JS/elem.js" charset="utf-8"></script>
+								</div>
+							</div>
+						</div>
+					<div>
+				</div>
+			</div>
+		</div>
+		<!--BODY----->
+		<!----------->
+		<div class="layui-footer">
+			<div class="layui-row layui-col-space15">
+				<div class="layui-col-md3">
+					<div class="grid-demo">
+						<div class="layui-btn-container">
+							<button type="button" class="layui-announce layui-btn-primary" lay-on="test-skin-custom">Announcement</button>
+							<script src="JS/announce.js" charset="utf-8"></script>
+						</div>
+					</div>
+				</div>
+				<div class="layui-col-md6">
+				  	<div class="grid-demo grid-demo-bg1">
+						<div class="cpy_details">Copyright &copy; 2023 Computer Science and Medical Interdisciplinary Engineering</div>
+				  	</div>
+				</div>
+				<div class="layui-col-md3">
+					<div class="grid-demo grid-demo-bg1 top">
+						<a href="#top" class="top">Top</a>
+					</div>
+			  </div>
+			  </div>
+		</div>
+	</div>
+</body>
+</html>

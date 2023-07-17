@@ -1,0 +1,234 @@
+
+/**
+ * @file config.css
+ * @author computersicencekaoyan
+ * @brief 
+ * @version 3.0
+ * @date 2023-06-14
+ * 
+ * @copyright Copyright (c) 2023
+ * 
+ */
+
+ * {
+    margin:0;
+	padding:0;
+    font-family: "LatoWeb","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.content{
+    width:100%;
+	line-height: normal;
+	position: relative;
+}
+
+hr {
+    border: 1;
+}
+
+/*--------------vertical menu---------------*/
+
+.subside_menu{
+    background-color:#2d3b45;
+    float: left;
+    width: 48px;
+    padding: 0;
+    height: 100%;
+    overflow: none ;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+}
+
+img.sidemark{
+    padding-top: 7px;
+    padding-bottom: 7px;
+    width: 38;
+    height: 38;
+    display: block;
+    margin: auto;
+}
+
+.sidemark a{
+    text-align: center;
+}
+
+/*------curr-menu----------*/
+
+.subside-menu-title{
+    font-style: italic;
+    margin: 1px;
+    padding:10px 15px;
+    font-size: 10px;
+    color: black;
+}
+
+/*-------------container------------*/
+#Homepage-title{
+    display: block;
+    font-size: 18px;
+    padding-bottom: 14px; 
+    color: #008ee2;
+    text-decoration: none;
+    border-bottom:1px solid #eee;
+    width: 100%;
+}
+
+.header{
+    margin-bottom:30px ;
+}
+
+.e-course-title-left{
+    width: 100%;
+}
+
+.main-content{
+    padding: 20px;
+    padding-bottom: 160px;
+    padding-right: 50px;
+}
+
+.intro{
+    background-color: #eee;
+    padding: 16px;
+    width: 100%;
+}
+
+.course-main-title-overall{
+    padding: 50px 0px 30px 0px;
+}
+
+.main-title{
+    font-size: 24px;
+    color: black;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.course-main-title{
+    font-size: 24px;
+    color: black;
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+.main-title-btn{
+    text-align: right;
+}
+
+.colla-title{
+    /*---Module---*/
+    padding-top: 30px;
+    font-weight: bold;
+}
+/*-----------------sideboard--------------*/
+.sideboard{ padding-right: 80px; }
+@media screen and (max-width:1200px) { 
+    .sideboard{ padding-right: 0px; } 
+}
+
+.sidetitle{
+    text-align: left;
+    font-size: 16px;
+    color: #2d3b45;
+    font-style:italic;
+    font-family:  "LatoWeb, Lato,Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-top: 23px;
+} 
+/*--------------listview------------------*/
+
+div.listview{
+    float: left;
+    width:100%;
+    padding-right: 20px;
+    margin-top: 2%;
+    overflow:none;
+}
+
+/*--------------footer--------------------*/
+
+div.footer{
+    width: 100%;
+    float: left;
+    display:block;
+    position: absolute;
+    bottom:0;
+}
+
+.subline{
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.announce{
+    width: 30%;
+    padding-left:10px; 
+    padding-top: 10px; 
+    padding-bottom: 10px;
+    padding-right: 50px;
+}
+
+.announce a{
+    color: #008ee2;
+    text-decoration:none;
+}
+
+.announce a:hover{
+    color: red;
+    text-decoration:none;
+}
+
+.copyright{
+    text-align:right; 
+    width: 70%; 
+    padding: 0;
+    font-size: small;
+}
+
+.announce{
+    color: #008ee2;
+}
+
+.announce:hover{
+    color: #008ee2;
+}
+
+.top{
+    color: #008ee2;
+    text-align: right;
+    padding-right: 15px;
+    right: 15px;
+}
+
+.top:hover{
+    color: #008ee2;
+    text-align: right;
+    padding-right: 15px;
+    right: 15px;
+}
+
+.cpy_details{
+    color: black;
+    text-align: center;
+}
+
+/*-----adaption-------*/
+
+@media screen and (max-width:500px) {
+    .sidetitle{
+        margin-top: 20px;
+    }
+    .main-content{
+        padding-right: 20px;
+    }
+    hr.title-line{
+        padding-top: 10px;
+    }
+}
