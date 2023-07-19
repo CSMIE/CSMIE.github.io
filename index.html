@@ -245,7 +245,7 @@
                             <div id="curtime"></div>
                             <div id="timer"></div>
                         </div>
-                        <iframe src="https://calendar.zoho.com.cn/zc/ui/embed/#calendar=6a49e3397aa58b11b4260138439469acc1589ec588dc9ad0e2ac19481d365e449a90f30e84dc132f8191dd56785a2d98&title=csmie2022&type=1&language=zh&timezone=Asia%2FShanghai&showTitle=0&showTimezone=0&startingDayOfWeek=0&timeFormat=1&view=month&showDetail=0&theme=1&showAttendee=0&showSwitchingViews=0&eventColorType=light&showAllEvents=0"
+                        <iframe src="https://calendar.zoho.com.cn/zc/ui/embed/#calendar=6a49e3397aa58b11b4260138439469acc1589ec588dc9ad0e2ac19481d365e449a90f30e84dc132f8191dd56785a2d98&title=csmie2022&type=1&language=zh&timezone=Asia%2FShanghai&showTitle=0&showTimezone=0&startingDayOfWeek=1&timeFormat=1&view=month&showDetail=0&theme=1&showAttendee=0&showSwitchingViews=0&eventColorType=light&showAllEvents=0"
                         frameBorder="0" scrolling="no" id="csmie-calendar"></iframe>
                     </div>
                     
@@ -256,76 +256,112 @@
                 <div class="col-sm-12 col-lg-3 pt-3">   
                     <!-- Nav tabs -->
                     <ul class="nav nav-tabs" role="tablist">
-                        <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#home" id="csmie-nav-tab-header">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#LMS" id="csmie-nav-tab-header">LMS</a></li>
-                        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#Link" id="csmie-nav-tab-header">Link</a></li>
+                        <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#tab-content-list-home" id="csmie-nav-tab-header">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#tab-content-list-LMS" id="csmie-nav-tab-header">LMS</a></li>
+                        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#tab-content-list-Link" id="csmie-nav-tab-header">Link</a></li>
                     </ul>
                   
                     <!-- Tab panes -->
                     <div class="tab-content">
-                        <div id="home" class="container-fluid tab-pane active" style="padding: 0;"><br>
+                        <div id="tab-content-list-home" class="container-fluid tab-pane active"><br>
                             <div class="card" > 
                                 <a href="#" class="btn" style="background-color: transparent" target="_blank">
-                                    <div class="card-body" style="padding: 3px;"><div class="card-title" id="csmie-nav-tab-link">2023-2024-1校历查询</div></div>
+                                    <div class="card-body text-start" style="padding: 3px;">
+                                        <img src="image/icon_page/schedule.png" id="csmie-tab-content-img">
+                                        <div class="card-title" id="csmie-nav-tab-link">2023-2024-1校历查询</div>
+                                    </div>
                                 </a>
                             </div>
                             <div class="card" style="margin-top: 10px;"> 
                                 <a href="calendar/schedule.html" class="btn" style="background-color: transparent" target="_blank">
-                                    <div class="card-body" style="padding: 3px;"><div class="card-title" id="csmie-nav-tab-link">2023-2024-1教学信息</div></div>
+                                    <div class="card-body text-start" style="padding: 3px;">
+                                        <img src="image/icon_page/schedule.png" id="csmie-tab-content-img">
+                                        <div class="card-title" id="csmie-nav-tab-link">2023-2024-1教学信息</div>
+                                    </div>
                                 </a>
                             </div>
                             <div class="card" style="margin-top: 10px;"> 
                                 <a href="#" class="btn" style="background-color: transparent" target="_blank">
-                                    <div class="card-body" style="padding: 3px;"><div class="card-title" id="csmie-nav-tab-link">2023-2024-1考试信息</div></div>
+                                    <div class="card-body text-start" style="padding: 3px;">
+                                        <img src="image/icon_page/doc-detail.png" id="csmie-tab-content-img">
+                                        <div class="card-title" id="csmie-nav-tab-link">2023-2024-1考试信息</div>
+                                    </div>
                                 </a>
                             </div>
                         </div>
-                        <div id="LMS" class="container tab-pane fade" style="padding: 0;"><br>
+                        <div id="tab-content-list-LMS" class="container tab-pane fade" style="padding: 0; margin-left: 0; margin-right: 0;"><br>
                             <div class="card"> 
                                 <a href="https://oc.sjtu.edu.cn/" class="btn" style="background-color: transparent" target="_blank">
-                                    <div class="card-body" style="padding: 3px;"><div class="card-title" id="csmie-nav-tab-link">Canvas</div></div>
+                                    <div class="card-body text-start" style="padding: 3px;">
+                                        <img src="image/icon_page/oc.png" id="csmie-tab-content-img">
+                                        <div class="card-title" id="csmie-nav-tab-link">Canvas</div>
+                                    </div>
                                 </a>
                             </div>
                             <div class="card" style="margin-top: 10px;"> 
                                 <a href="https://csmie.github.io/e-Course/login.html" class="btn" style="background-color: transparent" target="_blank">
-                                    <div class="card-body" style="padding: 3px;"><div class="card-title" id="csmie-nav-tab-link">e-Course</div></div>
+                                    <div class="card-body text-start" style="padding: 3px;">
+                                        <img src="image/icon_page/oc.png" id="csmie-tab-content-img">
+                                        <div class="card-title" id="csmie-nav-tab-link">e-Course</div>
+                                    </div>
                                 </a>
                             </div>
                             <div class="card" style="margin-top: 10px;"> 
                                 <a href="https://www.xuetangx.com/" class="btn" style="background-color: transparent" target="_blank">
-                                    <div class="card-body" style="padding: 3px;"><div class="card-title" id="csmie-nav-tab-link">学堂在线</div></div>
+                                    <div class="card-body text-start" style="padding: 3px;">
+                                        <img src="image/icon_page/degree-hat.png" id="csmie-tab-content-img">
+                                        <div class="card-title" id="csmie-nav-tab-link">学堂在线</div>
+                                    </div>
                                 </a>
                             </div>
                             <div class="card" style="margin-top: 10px;"> 
                                 <a href="http://mooc2-ans.chaoxing.com/visit/interaction?moocDomain=http://mooc1-1.chaoxing.com" class="btn" style="background-color: transparent" target="_blank">
-                                    <div class="card-body" style="padding: 3px;"><div class="card-title" id="csmie-nav-tab-link">超星平台</div></div>
+                                    <div class="card-body text-start" style="padding: 3px;">
+                                        <img src="image/icon_page/oc.png" id="csmie-tab-content-img">
+                                        <div class="card-title" id="csmie-nav-tab-link">超星平台</div>
+                                    </div>
                                 </a>
                             </div>
                             <div class="card" style="margin-top: 10px;"> 
                                 <a href="https://gitee.com/Jinhang_Qiu/Download" class="btn" style="background-color: transparent" target="_blank">
-                                    <div class="card-body" style="padding: 3px;"><div class="card-title" id="csmie-nav-tab-link">Awesome Med</div></div>
+                                    <div class="card-body text-start" style="padding: 3px;">
+                                        <img src="image/icon_page/course_center.png" id="csmie-tab-content-img">
+                                        <div class="card-title" id="csmie-nav-tab-link">Awesome Med</div>
+                                    </div>
                                 </a>
                             </div>
                         </div>
-                        <div id="Link" class="container tab-pane fade" style="padding: 0;"><br>
+                        <div id="tab-content-list-Link" class="container tab-pane fade" style="padding: 0; margin-left: 0; margin-right: 0;"><br>
                             <div class="card"> 
                                 <a href="https://i.sjtu.edu.cn/xtgl/login_slogin.html" class="btn" style="background-color: transparent" target="_blank">
-                                    <div class="card-body" style="padding: 3px;"><div class="card-title" id="csmie-nav-tab-link">教学信息网</div></div>
+                                    <div class="card-body text-start" style="padding: 3px;">
+                                        <img src="image/icon_page/info.png" id="csmie-tab-content-img">
+                                        <div class="card-title" id="csmie-nav-tab-link">教学信息网</div>
+                                    </div>
                                 </a>
                             </div>
                             <div class="card" style="margin-top: 10px;"> 
                                 <a href="https://gitee.com/Jinhang_Qiu/2022-2026_CSE_Course-structure" class="btn" style="background-color: transparent" target="_blank">
-                                    <div class="card-body" style="padding: 3px;"><div class="card-title" id="csmie-nav-tab-link">CSMIE</div></div>
+                                    <div class="card-body text-start" style="padding: 3px;">
+                                        <img src="image/icon_page/course_center.png" id="csmie-tab-content-img">
+                                        <div class="card-title" id="csmie-nav-tab-link">CSMIE</div>
+                                    </div>
                                 </a>
                             </div>
                             <div class="card" style="margin-top: 10px;"> 
                                 <a href="https://www.shsmu.edu.cn/jwc/" class="btn" style="background-color: transparent" target="_blank">
-                                    <div class="card-body" style="padding: 3px;"><div class="card-title" id="csmie-nav-tab-link">医学院教务处</div></div>
+                                    <div class="card-body text-start" style="padding: 3px;">
+                                        <img src="image/icon_page/browser.png" id="csmie-tab-content-img">
+                                        <div class="card-title" id="csmie-nav-tab-link">医学院教务处</div>
+                                    </div>
                                 </a>
                             </div>
                             <div class="card" style="margin-top: 10px;"> 
                                 <a href="https://jwstu.shsmu.edu.cn/Home/Index" class="btn" style="background-color: transparent" target="_blank">
-                                    <div class="card-body" style="padding: 3px;"><div class="card-title" id="csmie-nav-tab-link">医学院教学系统</div></div>
+                                    <div class="card-body text-start" style="padding: 3px;">
+                                        <img src="image/icon_page/browser.png" id="csmie-tab-content-img">
+                                        <div class="card-title" id="csmie-nav-tab-link">医学院教学系统</div>
+                                    </div>
                                 </a>
                             </div>
                         </div>

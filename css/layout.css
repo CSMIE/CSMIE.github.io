@@ -297,9 +297,34 @@ a{
     padding-top: 20px;
 }
 
+#tab-content-list-home{
+   padding: 0; 
+   margin-left: 0; 
+   margin-right: 0;
+}
+
+#tab-content-list-LMS{
+    padding: 0; 
+    margin-left: 0; 
+    margin-right: 0;
+}
+
+#tab-content-list-Link{
+    padding: 0; 
+    margin-left: 0; 
+    margin-right: 0;
+}
+
 #csmie-nav-tab-header{
     color: #023474;
     font-weight: bold;
+}
+
+#csmie-tab-content-img{
+    display: inline;
+    height: 20px;
+    padding-right: 10px;
+    text-align: left;
 }
 
 #csmie-nav-tab-link{
@@ -307,7 +332,9 @@ a{
     font-size: 16px;
     text-align: left;
     margin-bottom: 0;
+    display: inline;
 }
+
 
 #csmie-calendar{
     border-width:0; 
