@@ -1,0 +1,74 @@
+a{
+    text-decoration: none;
+}
+
+#INFO{
+    text-align: center;
+    color: #023474;
+    font-family: 圆体;
+    padding: 30px 0;
+}
+
+
+
+#curriculum-tab-nav{
+    background-color: white;
+    color: #013f88;
+    font-size: medium;
+    font-weight: bold;
+}
+
+#curriculum-dropdown-menu{
+    width: 100%;
+}
+
+#curriculum-card{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-top:5px solid #f0b537;
+}
+
+#curriculum-card-link{
+    color: #013f88;
+}
+
+#curriculum-card-title{
+    background-color: white;
+}
+
+#curriculum-card-title-tit{
+    font-weight: bolder;
+    padding-bottom: 10px;
+}
+
+#curriculum-card-title-time{
+    font-style: italic;
+    font-size: small;
+}
+
+#curriculum-card-info{
+    font-size: small;
+}
+
+#curriculum-year-list{
+    background-color: white;
+    color: black;
+    text-align: left;
+    border-radius: 0;
+    padding: 3px 15px;
+}
+
+#curriculum-year-list:hover{
+    background-color: #1C5DB7;
+    color: white;
+    text-align: left;
+    border-radius: 0;
+    padding: 3px 15px;
+}
+
+#curriculum-year-title{
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 微软雅黑;
+}

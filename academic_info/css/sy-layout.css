@@ -1,0 +1,125 @@
+
+
+/**
+ * @file ../e-Course/css/sy-layout.css
+ * @author csmie
+ * @brief 
+ * @version 0.1
+ * @date 2023-07-22
+ * @copyright Copyright (c) 2023 Computer Science and Medical Interdisciplinary Engineering .All Rights Reserved
+ * 
+ */
+
+
+#INFO{
+    text-align: center;
+    color: #023474;
+    font-family: 圆体;
+}
+
+
+
+/*--- header ---*/
+#ecourse-header{
+    background-color: #013f88;
+}
+
+#ecourse-header-img{
+    height: 40px;
+}
+
+#ecourse-nav-link{
+    color: white;
+}
+
+#ecourse-nav-link:hover{
+    color: #f0b537;
+}
+
+.ecourse-header-link-img{
+    display: none;
+}
+
+.ecourse-header-link-img img{
+    height: 30px;
+}
+
+#ecourse-header-identify-img{
+    height: 30px;
+}
+
+#ecourse-header-list a{
+    
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#ecourse-header-list a:hover{
+    
+    color:#f0b537;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#ecourse-header-list ul{
+    border-top: #f0b537 4px solid;
+}
+
+
+#ecourse-header-list-link a{
+    font-size: medium;
+    color: #023474;
+    text-align:center ;
+}
+
+#ecourse-header-list-link a:hover{
+    font-size: medium;
+    color: #023474;
+    text-align: center;
+}
+
+
+@media screen and (max-width:600px) {
+
+	ul.ecourse-head-link{
+        display: none;
+    }
+
+    .ecourse-header-link-img{
+        display: block;
+        margin-left: auto;
+    }
+}
+
+/*--- content ---*/
+
+#ecourse-content{
+    padding-top: 40px;
+    padding-bottom: 80px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#calendar-tab-nav{
+    background-color: white;
+    color: #013f88;
+    font-size: larger;
+    font-weight: bold;
+}
+
+#calendar-tab-nav:hover{
+    background-color: white;
+    color: #720808;
+    font-size: larger;
+    font-weight: bold;
+}
+
+#csmie-info-card{
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#csmie-info-appcard{
+    margin-bottom: 10px;
+}

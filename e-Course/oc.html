@@ -1,159 +1,406 @@
 <html>
 <head>
 	<title>e-Course</title>
-	<link rel="icon" href="image/CSMIE.ico" type="image/x-icon"/>
+	<link rel="icon" href="../image/CSMIE.ico" type="image/x-icon"/>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
-	<link rel="stylesheet" href="layui-main/dist/css/layui.css" media="all">
-	<link rel="stylesheet" href="CSS/layout.css" type="text/css">
-	<link rel="stylesheet" href="CSS/element.css" type="text/css">
-	<link rel="stylesheet" href="CSS/style.css" type="text/css">
-	<script src="layui-main/dist/layui.js" charset="utf-8"></script>
-	<script src="js/elem.js" charset="utf-8"></script>
-	<script src="js/announce.js" charset="utf-8"></script>
-	<script src="/cdn.staticfile.org/layui/2.8.0/layui.js"></script>
+	<link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/oc-layout.css" type="text/css" />
+	<link rel="stylesheet" href="../academic_info/css/sy-layout.css" type="text/css" />
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.js"></script>
 </head>
 
 <body>
-	<div class="layui-layout layui-layout-admin">
-		<!--subside-->
-		<div class="layui-side layui-bg-black">
-			<div class="layui-side-scroll">
-			  <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
-			  	<ul class="layui-nav layui-nav-tree" lay-filter="test">
-					<li class="layui-nav-item">
-						<a href="https://csmie.github.io/e-Course/oc.html">
-							<img  border="0" src="image/icon_page/MSE.png" class="sidemark">
-						</a>
-					</li>
-
-					<li class="layui-nav-item">
-						<a href=" https://oc.sjtu.edu.cn/ " target="_blank"> 
-							<img  border="0" src="image/icon_page/SJTU.png" class="sidemark">
-						</a>
-					</li>
-
-					<li class="layui-nav-item">
-						<a href="https://gitee.com/Jinhang_Qiu/Course-Materials" target="_blank">
-							<img  border="0" src="image/icon_page/curriculum_center.png" class="sidemark">
-						</a>
-					</li>
-
-					<li class="layui-nav-item">
-						<a href=" https://www.icourse163.org/ " target="_blank">
-							<img  border="0" src="image/icon_page/book.png" class="sidemark">
-						</a>
-					</li>	
-
-					<li class="layui-nav-item">
-						<a href="https://leetcode.cn/" target="_blank"> 
-							<img  border="0" src="image/icon_page/code.png" class="sidemark"> 
-						</a>
-					</li>
-
-					<li class="layui-nav-item">
-						<a href=" https://mail.sjtu.edu.cn/zimbra/mail#1 " target="_blank"> 
-							<img  border="0" src="image/icon_page/inbox.png" class="sidemark">
-						</a>
-					</li>
-			  	</ul>
-			</div>
+	<nav class="navbar navbar-light" id="ecourse-header">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">
+				<img src="image/CSMIE_title_package/CSMIE_Academic_Info.png" class="d-inline-block align-text-top" id="ecourse-header-img">
+			</a>
+			<ul class="nav justify-content-end ecourse-head-link">
+				<li class="nav-item"><a class="nav-link" href="../academic_info/enquiry.html" id="ecourse-nav-link">培养方案维护</a></li>
+				<li class="nav-item"><a class="nav-link" href="#" id="ecourse-nav-link">课程中心</a></li>
+				<li class="nav-item dropdown" id="ecourse-header-list">
+                    <a class="nav-link" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">信息查询</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+						<li id="ecourse-header-list-link"><a class="dropdown-item" href="../academic_info/syllabus.html" >课程大纲维护</a></li>
+						<li id="ecourse-header-list-link"><a class="dropdown-item" href="../academic_info/schedule.html" >学生课表查询</a></li>
+						<li id="ecourse-header-list-link"><a class="dropdown-item" href="../academic_info/score.html" >学生成绩查询</a></li>
+						<li id="ecourse-header-list-link"><a class="dropdown-item" href="../academic_info/examination.html" >考试时间查询</a></li>
+                    </ul>
+                </li>
+				<li class="nav-item dropdown" id="ecourse-header-list">
+                    <a class="nav-link" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">常用链接</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+						<li id="ecourse-header-list-link"><a class="dropdown-item" href="https://oc.sjtu.edu.cn/" >Canvas</a></li>
+						<li id="ecourse-header-list-link"><a class="dropdown-item" href="https://www.icourse163.org/">MOOC</a></li>
+						<li id="ecourse-header-list-link"><a class="dropdown-item" href="https://www.xuetangx.com/">学堂在线</a></li>
+						<li id="ecourse-header-list-link"><a class="dropdown-item" href="http://mooc2-ans.chaoxing.com/visit/interaction?moocDomain=http://mooc1-1.chaoxing.com">超星平台</a></li>
+					  	
+                    </ul>
+                </li>
+				<li class="nav-item"><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true" id="ecourse-nav-link">
+					<img src="image/icon_page/me.png" id="ecourse-header-identify-img">
+					Staff
+				</a></li>
+			</ul>
+			<button class="btn ecourse-header-link-img" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+				<img src="image/icon_page/link-page.png" >
+			</button>
 		</div>
-		<!--subside-->
-		<!----------->
-		<!--BODY----->
-		<div class="layui-body">
-			<!-- 内容主体区域 -->
-			<div class="main-content">
-				<div class="layui-row layui-col-space30">
-					<div class="layui-col-md9">
-					  	<div class="grid-demo grid-demo-bg1">
-							<!--content-->
-							<div class="layui-header">
-								<!-- 头部区域（可配合layui 已有的水平导航） -->
-								<ul class="layui-nav layui-layout-left">
-									<div id="title">Dashboard</div>
-								</ul>
-								<ul class="layui-nav layui-layout-right">
-								  	<li class="layui-nav-item">
-										<img src="image/icon_page/more_white.png" class="layui-nav-img">
-										<dl class="layui-nav-child">
-										<dd class="layui-nav-child-title">Dashboard View</dd>
-										<dd><a href="oc.html">Card View</a></dd>
-										<dd><a href="ListView.html">List View</a></dd>
-										<dd><a href="Grades.html">Grades</a></dd>
-										</dl>
-								  	</li>
-								</ul>
-							  </div>
-							<hr>
-							
-							
-							<div class="cardBox">
-								<div class="headerBox" style="background-color: #FDC010;">
-									<div style="text-align: right;"><a href="Homepage/2022-2023-1.html"><img src="image/icon_page/more_white.png"></a></div>
-									<p><a title="2022-2023-1" style="cursor: pointer; color:white" onclick="viewXmInfo('${var.OMP_XM_ID}');"></a></p>
-								</div>
-								<div class="bodyBox"><a href="Homepage/2022-2023-1.html">
-									<b style="color: #FDC010;">2022-2023 Fall</b><br>Curriculum<br>UG-(2022-2023-1)-CSMIE
-								</a></div>
-							</div>
-						
-				
-							<div class="cardBox">
-								<div class="headerBox" style="background-color: #09BCD3;">
-									<div style="text-align: right;"><a href="Homepage/2022-2023-2.html"><img src="image/icon_page/more_white.png"></a></div>
-									<p><a title="2022-2023-2" style="cursor: pointer; color:white" onclick="viewXmInfo('${var.OMP_XM_ID}');"></a></p>
-								</div>
-								<div class="bodyBox"><a href="Homepage/2022-2023-2.html">
-									<b style="color: #09BCD3;">2022-2023 Spring</b><br>Curriculum<br>UG-(2022-2023-2)-CSMIE
-								</a></div>
-							</div>
-																
-							<div class="cardBox">
-								<div class="headerBox" style="background-color:#E71F63;">
-									<div style="text-align: right;"><a href="Homepage/2022-2023-3.html"><img src="image/icon_page/more_white.png"></a></div>
-									<p><a title="2022-2023-2" style="cursor: pointer; color:white" onclick="viewXmInfo('${var.OMP_XM_ID}');"></a></p>
-								</div>
-								<div class="bodyBox"><a href="Homepage/2022-2023-3.html" >
-									<b style="color: #E71F63;">2022-2023 Summer</b><br>Curriculum<br>UG-(2022-2023-3)-CSMIE
-								</a></div>
-							</div>
-						
-			  				<!--content-->
-					  	</div>
-					</div>
-					<div class="layui-col-md3">
-					  	<div class="grid-demo">
-							<div class="sideboard">
-								<div class="sidetitle">calendar</div><hr>
-								<div class="ws-demo-static"><div class="layui-inline" id="ID-laydate-static-2"></div></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+	</nav>
+
+	<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+		<div class="offcanvas-header">
+			<h5 id="offcanvasRightLabel">主菜单</h5>
+			<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 		</div>
-		<!--BODY----->
-		<!----------->
-		<!--footer--->
-		<div class="layui-footer">
-			<div class="layui-row layui-col-space15">
-				<div class="layui-col-md5">
-					<div class="grid-demo">
-						<div class="layui-btn-container">
-							<button type="button" class="layui-announce layui-btn-primary" lay-on="test-skin-custom">Announcement</button>
-						</div>
-					</div>
-				</div>
-				<div class="layui-col-md7">
-				  	<div class="grid-demo grid-demo-bg1">
-						<div class="cpy_details">Copyright &copy; 2023 Computer Science and Medical Interdisciplinary Engineering</div>
-				  	</div>
-				</div>
-			  </div>
+		<div class="offcanvas-body">
+			
 		</div>
-		<!--footer--->
 	</div>
+
+	
+	<!-- content -->
+
+	<div class="container px-4" id="ecourse-content">
+		<b><h2 id="INFO"> 课程信息查询 </h2></b>
+        <div class="card" >
+			<div class="card-header">
+				<ul class="nav nav-pills nav-fill" role="tablist">
+					<li class="nav-item  dropdown">
+						<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="curriculum-tab-nav">学期</a>
+						<ul class="dropdown-menu" id="curriculum-dropdown-menu" >
+							<div class="nav-link disabled" data-bs-toggle="pill" data-bs-target="#v-choose-year" type="button" role="tab" id="curriculum-year-list">请选择学期</div>
+							<div class="nav-link" data-bs-toggle="pill" data-bs-target="#v-2023-2024-1" type="button" role="tab" id="curriculum-year-list">2023-2024-1</div>
+							<div class="nav-link" data-bs-toggle="pill" data-bs-target="#v-2022-2023-3" type="button" role="tab" id="curriculum-year-list">2022-2023-3</div>
+							<div class="nav-link" data-bs-toggle="pill" data-bs-target="#v-2022-2023-2" type="button" role="tab" id="curriculum-year-list">2022-2023-2</div>
+							<div class="nav-link" data-bs-toggle="pill" data-bs-target="#v-2022-2023-1" type="button" role="tab" id="curriculum-year-list">2022-2023-1</div>
+						</ul>
+					</li>
+                    <li class="nav-item"><a class="nav-link disabled" data-bs-toggle="pill" href="#" id="curriculum-tab-nav">CSMIE</a></li>
+					<li class="nav-item"><a class="nav-link disabled" data-bs-toggle="pill" href="#" id="curriculum-tab-nav">计算机科学</a></li>
+					<li class="nav-item"><a class="nav-link disabled" data-bs-toggle="pill" href="#" id="curriculum-tab-nav">2021级</a></li>
+				</ul>
+			</div>
+			<div class="card-body">
+				<!-- Tab panes -->
+				<div class="tab-content" id="v-pills-tabContent">
+					<div class="tab-pane fade" id="v-2023-2024-1" role="tabpanel" tabindex="0">
+						<div id="curriculum-year-title">2023-2024学年度第一学期课程信息</div> 
+
+						<h3 id="INFO"> 当前未获取到信息！ </h3>
+
+
+
+						<!---
+
+                        <div class="row">
+                            <div class="col-sm-12 col-lg-4 px-4">
+                                <div class="card" id="curriculum-card">
+                                    <a href="#" id="curriculum-card-link">
+                                        <div class="card-header" id="curriculum-card-title">
+                                            <div id="curriculum-card-title-tit"></div>
+                                            <div id="curriculum-card-title-time">2023-2024，秋季学期 &ensp; 计算机科学</div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div id="curriculum-card-info"><b>课程代码：</b>(2023-2024-1)--01</div>
+											<div id="curriculum-card-info"><b>课程信息：</b>必修 /  Units /  credits</div>
+											<div id="curriculum-card-info"><b>上课地址：</b>不排教室</div>
+											<div id="curriculum-card-info"><b>上课时间：</b>N/A</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-4 px-4">
+								<div class="card" id="curriculum-card">
+                                    <a href="#" id="curriculum-card-link">
+                                        <div class="card-header" id="curriculum-card-title">
+                                            <div id="curriculum-card-title-tit"></div>
+                                            <div id="curriculum-card-title-time">2023-2024，秋季学期 &ensp; 计算机科学</div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div id="curriculum-card-info"><b>课程代码：</b>(2023-2024-1)--01</div>
+											<div id="curriculum-card-info"><b>课程信息：</b>必修 /  Units /  credits</div>
+											<div id="curriculum-card-info"><b>上课地址：</b>不排教室</div>
+											<div id="curriculum-card-info"><b>上课时间：</b>N/A</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-4 px-4">
+								<div class="card" id="curriculum-card">
+                                    <a href="#" id="curriculum-card-link">
+                                        <div class="card-header" id="curriculum-card-title">
+                                            <div id="curriculum-card-title-tit"></div>
+                                            <div id="curriculum-card-title-time">2023-2024，秋季学期 &ensp; 计算机科学</div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div id="curriculum-card-info"><b>课程代码：</b>(2023-2024-1)--01</div>
+											<div id="curriculum-card-info"><b>课程信息：</b>必修 /  Units /  credits</div>
+											<div id="curriculum-card-info"><b>上课地址：</b>不排教室</div>
+											<div id="curriculum-card-info"><b>上课时间：</b>N/A</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+					    </div>
+
+						-->
+
+
+					</div>
+
+					<!-- 2022-2023-3 -->
+
+					<div class="tab-pane fade show active" id="v-2022-2023-3" role="tabpanel" tabindex="0">
+						<div id="curriculum-year-title">2022-2023学年度夏季学期课程信息</div>
+						<div class="row">
+                            <div class="col-sm-12 col-lg-4 px-4">
+                                <div class="card" id="curriculum-card">
+                                    <a href="https://computersciencekaoyan.github.io/Online%20Course/Homepage/CS3311.html" id="curriculum-card-link">
+                                        <div class="card-header" id="curriculum-card-title">
+                                            <div id="curriculum-card-title-tit">计算机网络</div>
+                                            <div id="curriculum-card-title-time">2022-2023，夏季学期 &ensp; 计算机科学</div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div id="curriculum-card-info"><b>课程代码：</b>(2022-2023-3)-CS3311-01</div>
+											<div id="curriculum-card-info"><b>课程信息：</b>必修 / 27 Units / 3 credits</div>
+											<div id="curriculum-card-info"><b>上课地址：</b>不排教室</div>
+											<div id="curriculum-card-info"><b>上课时间：</b>N/A</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-4 px-4">
+								<div class="card" id="curriculum-card">
+                                    <a href="https://nju-projectn.github.io/ics-pa-gitbook/ics2022/index.html" id="curriculum-card-link">
+                                        <div class="card-header" id="curriculum-card-title">
+                                            <div id="curriculum-card-title-tit">计算机系统基础</div>
+                                            <div id="curriculum-card-title-time">2022-2023，夏季学期 &ensp; 计算机科学</div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div id="curriculum-card-info"><b>课程代码：</b>(2022-2023-3)-(15-213-H*)-01</div>
+											<div id="curriculum-card-info"><b>课程信息：</b>必修 / 6 Units / 2 credits</div>
+											<div id="curriculum-card-info"><b>上课地址：</b>不排教室</div>
+											<div id="curriculum-card-info"><b>上课时间：</b>N/A</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-4 px-4">
+								<div class="card" id="curriculum-card">
+                                    <a href="https://www.xuetangx.com/my-courses/current" id="curriculum-card-link" target="_blank">
+                                        <div class="card-header" id="curriculum-card-title">
+                                            <div id="curriculum-card-title-tit">数据结构与算法分析</div>
+                                            <div id="curriculum-card-title-time">2022-2023，夏季学期 &ensp; 计算机科学</div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div id="curriculum-card-info"><b>课程代码：</b>(2022-2023-3)-CS2308-01</div>
+											<div id="curriculum-card-info"><b>课程信息：</b>必修 / 27 Units / 3 credits</div>
+											<div id="curriculum-card-info"><b>上课地址：</b>不排教室</div>
+											<div id="curriculum-card-info"><b>上课时间：</b>N/A</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+					    </div>
+					</div>
+
+
+					<!-- 2022-2023-2 -->
+
+					<div class="tab-pane fade" id="v-2022-2023-2" role="tabpanel" tabindex="0">
+						<div id="curriculum-year-title">2022-2023学年度第二学期课程信息</div>
+						<div class="row">
+                            <div class="col-sm-12 col-lg-4 px-4">
+                                <div class="card" id="curriculum-card">
+                                    <a href="#" id="curriculum-card-link">
+                                        <div class="card-header" id="curriculum-card-title">
+                                            <div id="curriculum-card-title-tit">数据结构(2)</div>
+                                            <div id="curriculum-card-title-time">2022-2023，春季学期 &ensp; 计算机科学</div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div id="curriculum-card-info"><b>课程代码：</b>(2022-2023-2)-CS0501-02</div>
+											<div id="curriculum-card-info"><b>课程信息：</b>必修 / 8 Units / 2 credits</div>
+											<div id="curriculum-card-info"><b>上课地址：</b>不排教室</div>
+											<div id="curriculum-card-info"><b>上课时间：</b>N/A</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-4 px-4">
+								<div class="card" id="curriculum-card">
+                                    <a href="#" id="curriculum-card-link">
+                                        <div class="card-header" id="curriculum-card-title">
+                                            <div id="curriculum-card-title-tit">线性代数</div>
+                                            <div id="curriculum-card-title-time">2022-2023，春季学期 &ensp; 计算机科学</div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div id="curriculum-card-info"><b>课程代码：</b>(2022-2023-2)-MATH1205-01</div>
+											<div id="curriculum-card-info"><b>课程信息：</b>必修 / 6 Units / 2 credits</div>
+											<div id="curriculum-card-info"><b>上课地址：</b>不排教室</div>
+											<div id="curriculum-card-info"><b>上课时间：</b>N/A</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-4 px-4">
+								<div class="card" id="curriculum-card">
+                                    <a href="#" id="curriculum-card-link">
+                                        <div class="card-header" id="curriculum-card-title">
+                                            <div id="curriculum-card-title-tit">计算机组成原理</div>
+                                            <div id="curriculum-card-title-time">2022-2023，春季学期 &ensp; 计算机科学</div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div id="curriculum-card-info"><b>课程代码：</b>(2022-2023-2)-CS2307-01</div>
+											<div id="curriculum-card-info"><b>课程信息：</b>必修 / 7 Units / 3 credits</div>
+											<div id="curriculum-card-info"><b>上课地址：</b>不排教室</div>
+											<div id="curriculum-card-info"><b>上课时间：</b>N/A</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+					    </div>
+						<div class="row">
+                            <div class="col-sm-12 col-lg-4 px-4">
+                                <div class="card" id="curriculum-card">
+                                    <a href="#" id="curriculum-card-link">
+                                        <div class="card-header" id="curriculum-card-title">
+                                            <div id="curriculum-card-title-tit">操作系统</div>
+                                            <div id="curriculum-card-title-time">2022-2023，春季学期 &ensp; 计算机科学</div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div id="curriculum-card-info"><b>课程代码：</b>(2022-2023-2)-CS2310-01</div>
+											<div id="curriculum-card-info"><b>课程信息：</b>必修 / 7 Units / 3 credits</div>
+											<div id="curriculum-card-info"><b>上课地址：</b>不排教室</div>
+											<div id="curriculum-card-info"><b>上课时间：</b>N/A</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-4 px-4">
+								<div class="card" id="curriculum-card">
+                                    <a href="#" id="curriculum-card-link">
+                                        <div class="card-header" id="curriculum-card-title">
+                                            <div id="curriculum-card-title-tit">大学英语(3)</div>
+                                            <div id="curriculum-card-title-time">2022-2023，春季学期 &ensp; 计算机科学</div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div id="curriculum-card-info"><b>课程代码：</b>(2022-2023-2)-FL2203-01</div>
+											<div id="curriculum-card-info"><b>课程信息：</b>必修 / 14 Units / 2 credits</div>
+											<div id="curriculum-card-info"><b>上课地址：</b>不排教室</div>
+											<div id="curriculum-card-info"><b>上课时间：</b>N/A</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            
+					    </div>
+					</div>
+
+
+
+
+					<!-- 2022-2023-1 -->
+					<div class="tab-pane fade" id="v-2022-2023-1" role="tabpanel" tabindex="0">
+						<div id="curriculum-year-title">2022-2023学年度第一学期课程信息</div>
+						<div class="row">
+                            <div class="col-sm-12 col-lg-4 px-4">
+                                <div class="card" id="curriculum-card">
+                                    <a href="#" class="disabled" id="curriculum-card-link">
+                                        <div class="card-header" id="curriculum-card-title">
+                                            <div id="curriculum-card-title-tit">高等数学</div>
+                                            <div id="curriculum-card-title-time">2022-2023，秋季学期 &ensp; 计算机科学</div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div id="curriculum-card-info"><b>课程代码：</b>(2022-2023-1)-MATH1201-01</div>
+											<div id="curriculum-card-info"><b>课程信息：</b>必修 / 14 Units / 6 credits</div>
+											<div id="curriculum-card-info"><b>上课地址：</b>不排教室</div>
+											<div id="curriculum-card-info"><b>上课时间：</b>N/A</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-4 px-4">
+								<div class="card" id="curriculum-card">
+                                    <a href="https://oc.sjtu.edu.cn/courses/47811" id="curriculum-card-link" target="_blank">
+                                        <div class="card-header" id="curriculum-card-title">
+                                            <div id="curriculum-card-title-tit">概率论与数理统计</div>
+                                            <div id="curriculum-card-title-time">2022-2023，秋季学期 &ensp; 计算机科学</div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div id="curriculum-card-info"><b>课程代码：</b>(2022-2023-1)-MATH1207-01</div>
+											<div id="curriculum-card-info"><b>课程信息：</b>必修 / 8 Units / 3 credits</div>
+											<div id="curriculum-card-info"><b>上课地址：</b>不排教室</div>
+											<div id="curriculum-card-info"><b>上课时间：</b>N/A</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-4 px-4">
+								<div class="card" id="curriculum-card">
+                                    <a href="https://oc.sjtu.edu.cn/courses/47986" id="curriculum-card-link" target="_blank">
+                                        <div class="card-header" id="curriculum-card-title">
+                                            <div id="curriculum-card-title-tit">离散数学</div>
+                                            <div id="curriculum-card-title-time">2022-2023，秋季学期 &ensp; 计算机科学</div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div id="curriculum-card-info"><b>课程代码：</b>(2022-2023-1)-CS2501-01</div>
+											<div id="curriculum-card-info"><b>课程信息：</b>必修 / 8 Units / 3 credits</div>
+											<div id="curriculum-card-info"><b>上课地址：</b>不排教室</div>
+											<div id="curriculum-card-info"><b>上课时间：</b>N/A</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+					    </div>
+
+						<div class="row">
+                            <div class="col-sm-12 col-lg-4 px-4">
+                                <div class="card" id="curriculum-card">
+                                    <a href="https://oc.sjtu.edu.cn/courses/47844" id="curriculum-card-link" target="_blank">
+                                        <div class="card-header" id="curriculum-card-title">
+                                            <div id="curriculum-card-title-tit">数据结构</div>
+                                            <div id="curriculum-card-title-time">2022-2023，秋季学期 &ensp; 计算机科学</div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div id="curriculum-card-info"><b>课程代码：</b>(2022-2023-1)-CS0501-01</div>
+											<div id="curriculum-card-info"><b>课程信息：</b>必修 / 11 Units / 3 credits</div>
+											<div id="curriculum-card-info"><b>上课地址：</b>不排教室</div>
+											<div id="curriculum-card-info"><b>上课时间：</b>N/A</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-4 px-4">
+								<div class="card" id="curriculum-card">
+                                    <a href="#" id="curriculum-card-link">
+                                        <div class="card-header" id="curriculum-card-title">
+                                            <div id="curriculum-card-title-tit">大学英语</div>
+                                            <div id="curriculum-card-title-time">2022-2023，秋季学期 &ensp; 计算机科学</div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div id="curriculum-card-info"><b>课程代码：</b>(2022-2023-1)-FL2103-01</div>
+											<div id="curriculum-card-info"><b>课程信息：</b>必修 / N/A / 2 credits</div>
+											<div id="curriculum-card-info"><b>上课地址：</b>不排教室</div>
+											<div id="curriculum-card-info"><b>上课时间：</b>N/A</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            
+					    </div>
+
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+
+
+	
 </body>
 </html>
