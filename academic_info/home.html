@@ -1,0 +1,191 @@
+<html>
+<head>
+	<title>Academic Information Service</title>
+	<link rel="icon" href="image/CSMIE.ico" type="image/x-icon"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/sy-layout.css" type="text/css" />
+	<link rel="stylesheet" href="../css/layout.css" type="text/css" />
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+</head>
+
+
+<body>
+	<nav class="navbar navbar-light" id="ecourse-header">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">
+				<img src="image/CSMIE_title_package/CSMIE_Academic_Info.png" class="d-inline-block align-text-top" id="ecourse-header-img">
+			</a>
+			<ul class="nav justify-content-end ecourse-head-link">
+				<li class="nav-item"><a class="nav-link" href="enquiry.html" id="ecourse-nav-link">培养方案维护</a></li>
+				<li class="nav-item"><a class="nav-link" href="../e-Course/oc.html" id="ecourse-nav-link">课程中心</a></li>
+				<li class="nav-item dropdown" id="ecourse-header-list">
+                    <a class="nav-link" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">信息查询</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+						<li id="ecourse-header-list-link"><a class="dropdown-item" href="syllabus.html" >课程大纲维护</a></li>
+						<li id="ecourse-header-list-link"><a class="dropdown-item" href="schedule.html" >学生课表查询</a></li>
+						<li id="ecourse-header-list-link"><a class="dropdown-item" href="score.html" >学生成绩查询</a></li>
+						<li id="ecourse-header-list-link"><a class="dropdown-item" href="examination.html" >考试时间查询</a></li>
+                    </ul>
+                </li>
+				<li class="nav-item dropdown" id="ecourse-header-list">
+                    <a class="nav-link" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">常用链接</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+						<li id="ecourse-header-list-link"><a class="dropdown-item" href="https://oc.sjtu.edu.cn/" >Canvas</a></li>
+						<li id="ecourse-header-list-link"><a class="dropdown-item" href="https://www.icourse163.org/">MOOC</a></li>
+						<li id="ecourse-header-list-link"><a class="dropdown-item" href="https://www.xuetangx.com/">学堂在线</a></li>
+						<li id="ecourse-header-list-link"><a class="dropdown-item" href="http://mooc2-ans.chaoxing.com/visit/interaction?moocDomain=http://mooc1-1.chaoxing.com">超星平台</a></li>
+					  	
+                    </ul>
+                </li>
+				<li class="nav-item"><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true" id="ecourse-nav-link">
+					<img src="image/icon_page/me.png" id="ecourse-header-identify-img">
+					Staff
+				</a></li>
+			</ul>
+			<button class="btn ecourse-header-link-img" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+				<img src="image/icon_page/link-page.png" >
+			</button>
+		</div>
+	</nav>
+
+	<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+		<div class="offcanvas-header">
+			<h5 id="offcanvasRightLabel">主菜单</h5>
+			<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		</div>
+		<div class="offcanvas-body">
+			
+		</div>
+	</div>
+
+	
+	<!-- content -->
+
+	<div class="container" id="ecourse-content">
+
+
+
+		<div class="row">
+			<div class="col-sm-12 col-lg-4 px-4">
+				<div class="card" id="csmie-info-card">
+					<h5 class="card-header">我的应用</h5>
+					<div class="card-body">
+						<div class="row">
+
+							<div class="col-6">
+
+								<div class="card" id="csmie-info-appcard"> 
+									<a href="enquiry.html" class="btn" style="background-color: transparent">
+										<div class="card-body text-start" style="padding: 3px;">
+											<img src="image/icon_page/dashbord.png" id="csmie-tab-content-img">
+											<div class="card-title" id="csmie-nav-tab-link">仪表盘</div>
+										</div>
+									</a>
+								</div>
+
+								<div class="card" id="csmie-info-appcard"> 	
+									<a href="https://mail.sjtu.edu.cn/zimbra/" class="btn" style="background-color: transparent" target="_blank">
+										<div class="card-body text-start" style="padding: 3px;">
+											<img src="image/icon_page/email.png" id="csmie-tab-content-img">
+											<div class="card-title" id="csmie-nav-tab-link">收件箱</div>
+										</div>
+									</a>
+								</div>
+
+							</div>
+							<div class="col-6">
+
+								<div class="card" id="csmie-info-appcard"> 
+									<a href="score.html" class="btn" style="background-color: transparent">
+										<div class="card-body text-start" style="padding: 3px;">
+											<img src="image/icon_page/score.png" id="csmie-tab-content-img">
+											<div class="card-title" id="csmie-nav-tab-link">成绩</div>
+										</div>
+									</a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-12 col-lg-4 px-4">
+				<div class="card" id="csmie-info-card">
+					<h5 class="card-header">通知公告</h5>
+					<div class="card-body">
+						
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-12 col-lg-4 px-4">
+				<div class="card" id="csmie-info-card">
+					<h5 class="card-header">友情链接</h5>
+					<div class="card-body">
+						<div class="card"> 
+							<a href="https://i.sjtu.edu.cn/xtgl/login_slogin.html" class="btn" style="background-color: transparent" target="_blank">
+								<div class="card-body text-start" style="padding: 3px;">
+									<img src="image/icon_page/info.png" id="csmie-tab-content-img">
+									<div class="card-title" id="csmie-nav-tab-link">教学信息网</div>
+								</div>
+							</a>
+						</div>
+						<div class="card" style="margin-top: 10px;"> 
+							<a href="https://gitee.com/Jinhang_Qiu/2022-2026_CSE_Course-structure" class="btn" style="background-color: transparent" target="_blank">
+								<div class="card-body text-start" style="padding: 3px;">
+									<img src="image/icon_page/course_center.png" id="csmie-tab-content-img">
+									<div class="card-title" id="csmie-nav-tab-link">CSMIE</div>
+								</div>
+							</a>
+						</div>
+						<div class="card" style="margin-top: 10px;"> 
+							<a href="https://www.shsmu.edu.cn/jwc/" class="btn" style="background-color: transparent" target="_blank">
+								<div class="card-body text-start" style="padding: 3px;">
+									<img src="image/icon_page/browser.png" id="csmie-tab-content-img">
+									<div class="card-title" id="csmie-nav-tab-link">医学院教务处</div>
+								</div>
+							</a>
+						</div>
+						<div class="card" style="margin-top: 10px;"> 
+							<a href="https://jwstu.shsmu.edu.cn/Home/Index" class="btn" style="background-color: transparent" target="_blank">
+								<div class="card-body text-start" style="padding: 3px;">
+									<img src="image/icon_page/browser.png" id="csmie-tab-content-img">
+									<div class="card-title" id="csmie-nav-tab-link">医学院教学系统</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- calendar tab-->
+		<div class="card" >
+			<div class="card-header">
+				<ul class="nav nav-pills nav-fill" role="tablist">
+					<li class="nav-item"><a class="nav-link active" data-bs-toggle="pill" href="#home" id="calendar-tab-nav">本学期课表</a></li>
+					<li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#menu1" id="calendar-tab-nav">下学期课表</a></li>
+					<li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#menu2" id="calendar-tab-nav">学期校历</a></li>
+				</ul>
+			</div>
+			<div class="card-body">
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div id="home" class="container tab-pane active">
+						<iframe src="https://calendar.zoho.com.cn/zc/ui/embed/#calendar=6a49e3397aa58b11b4260138439469acc1589ec588dc9ad0e2ac19481d365e449a90f30e84dc132f8191dd56785a2d98&title=csmie2022&type=1&language=zh&timezone=Asia%2FShanghai&showTitle=0&showTimezone=0&startingDayOfWeek=1&timeFormat=1&view=work&showDetail=0&theme=1&showAttendee=0&showSwitchingViews=0&eventColorType=light&hourStart=7&hourEnd=23"
+    					width="100%" height=1000px frameBorder="0" scrolling="no" style="overflow: hidden;margin-top: 0; margin: 0px;" ></iframe>
+					</div>
+					<div id="menu1" class="container tab-pane"><br>
+						<h4 id="INFO">当前未查询到下学期课表！</h4>
+					</div>
+					<div id="menu2" class="container tab-pane"><br>
+						<h4 id="INFO">获取加载信息失败！</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
